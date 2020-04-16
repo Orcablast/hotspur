@@ -1,0 +1,59 @@
+@import url("reset.css");
+
+.header_screen {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #111836d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header_screen i {
+  position: absolute;
+  margin: 20px;
+  font-size: 50px;
+  opacity: 0.4;
+  cursor: pointer;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.header_screen i:hover {
+  opacity: 0.8;
+}
+
+.main_scrn {
+  width: 100%;
+  height: 100%;
+}
+
+.main_scrn img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.65;
+}
+
+#scrn_prev {
+  left: 0;
+  padding-left: 60px;
+  padding-right: 240px;
+}
+
+#scrn_next {
+  padding-left: 240px;
+  padding-right: 60px;
+  right: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
