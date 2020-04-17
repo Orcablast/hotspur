@@ -10,10 +10,13 @@ header {
   align-items: center;
 }
 
-.menu a {
-  text-decoration: none;
+.menu > span > a {
   color: white;
   font-size: 24px;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .logo_wrapper {
@@ -37,10 +40,39 @@ a .logo_wrapper div {
   height: 80px;
 }
 
-.menu > span {
-  margin: 0 60px;
+.menu > span:not(:last-of-type) {
+  margin: 0 70px;
 }
 
-.menu > span:last-of-type {
-  /* background-color: red; */
+.dh-myinfo {
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: rgba(17, 24, 54, 0.582);
+  left: -60px;
+  top: 33px;
+}
+
+.dh-myinfo a {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.dh-user {
+  position: relative;
+  margin-left: 250px;
+}
+
+.dh-user i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
 }

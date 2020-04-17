@@ -2,9 +2,5 @@
 @import url("header.css");
 
 * {
-  box-sizing: content-box;
-}
-
-body {
-  height: 100%;
+  box-sizing: border-box;
 }
