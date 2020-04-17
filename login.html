@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="format/color.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    #grand > div {
+      float: left;
+      width: 500px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: 150px;
+      position: relative;
+      padding-left: 50px;
+      left: 200px;
+    }
+    input {
+      margin-top: 20px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 15px;
+    }
+    input[type="submit"],
+    .join {
+      width: 100px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      background-color: #0c204c;
+      border: none;
+      color: white;
+      border-radius: 2px;
+      margin-top: 20px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+    .join > a {
+      color: white;
+      text-decoration: none;
+    }
+    #grand > div:first-child {
+      border-right: 1px solid lightgray;
+    }
+  </style>
+  <script>
+    $(function () {
+      $("input").eq(0).css("height", "30px");
+    });
+  </script>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html">
+          <div class="logo_wrapper">
+            <div class="menu_logo"></div>
+            <div><span>Tottenham</span><span>HotSpur</span></div>
+          </div>
+        </a>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
+        <span><a href="#">STADIUM</a></span>
+        <span><a href="#">OUR PLAYERS</a></span>
+        <span><a href="ticket.html">TICKETS</a></span>
+        <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
+        <span><a href="goods_main_balls.html">SHOP</a></span>
+        <span class="dh-user"
+          ><a href="#"><i class="far fa-user"></i> </a>
+          <div class="dh-myinfo">
+            <a href="Tottenham_insertMem.html">회원가입</a>
+            <a href="login.html">로그인</a>
+          </div>
+        </span>
+      </div>
+    </header>
+    <div id="grand">
+      <div>
+        <h2>로그인 <i class="fas fa-user-circle"></i></h2>
+        <form action="index.html" method="get">
+          <input
+            type="text"
+            placeholder="아이디를 입력하세요"
+            size="30"
+            required
+          /><br />
+          <input
+            type="password"
+            placeholder="비밀번호를 입력하세요"
+            size="30"
+            required
+          /><br />
+          <input type="submit" value="로그인" />
+        </form>
+      </div>
+      <div>
+        <h2>회원가입 <i class="fas fa-user-plus"></i></h2>
+        <br />
+        아직 계정이 없으신가요?<br />토트넘의 가족이 되세요<br /><br />
+        <div class="join"><a href="Tottenham_insertMem.html">회원가입</a></div>
+      </div>
+    </div>
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+  </body>
+</html>

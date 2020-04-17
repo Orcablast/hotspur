@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    
+    <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+
+<title>Insert title here</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        #con{ 
+            width: 100%;
+        }
+
+        #main{
+            width: 100%;
+            height: 900px;
+            margin: 0 auto;
+            margin-top: 2%;
+        }
+        
+        #title{
+            font-size: 50px;
+            margin-top: 5%;
+            margin-left: 5%;
+            font-family: 'Bangers', cursive;
+            
+        }
+        
+        .main_1{
+            width: 100%;
+            opacity: 0.9;
+            margin: 0 auto;  
+            margin-left: 11%;
+        }
+        #side1{
+            width: 100%;
+            height: 250px;
+            margin-top: 2%;
+        }
+
+        .side1_1{
+            width: 90%;
+            height: 300px;
+            margin: 0 auto; 
+            background: linear-gradient(45deg,rgba(17, 24, 54),white);
+            border-radius: 20px;
+            margin-left: 5.8%;
+        }
+        
+        .view{
+            width: 25%;
+            height: 150px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-left: 6%;
+            display: inline-flex;
+        }
+        #footer{
+            margin-top: 10%;
+            width: 100%;
+            height: 1150px;
+        }
+        .footer_1{
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            margin-top: 3%;
+            margin-left: 5.5%;
+            
+        }
+        .footer_2_1{
+            width: 90%;
+            height: 500px;
+            margin-top: 1.5%;
+            border-radius: 20px;
+            background-image: url(imgs/son_banner.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            
+        }
+        .footer_2_2{
+            width: 40%;
+            height: 500px;
+            margin-top: 1.5%;
+            background-image: url(imgs/son.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 1;
+            position: absolute;
+            
+        }
+        .footer_3{
+            width: 100%;
+            height: 600px;
+            margin-top: 3%;
+        }
+        
+        #title{
+            margin: 0;
+            line-height: 200%;
+            margin-left: 3%;
+            color: white;
+        }
+        
+
+        
+        .maintop{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(45deg,rgba(17, 24, 54),white);
+            position: relative;
+        }
+        
+        .footer_3_1{
+            width: 100%;
+            height: 500px;
+            margin-top: 2%;
+            background-image: url(imgs/sons.PNG);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;   
+        }
+        #text{
+            font-size: 30px;
+            margin-left: 20%;
+        }
+        #newview{
+            font-size: 50px;
+            margin-left: 5%;
+            margin-bottom: 2%;
+            font-family: 'Bangers', cursive;
+        }
+
+        #text2{
+            margin-top: 1.5%;
+            width: 90%;
+            height: 500px;
+            border-radius: 20px;
+            position: absolute;
+            background-color: rgba(17, 24, 54, 0.3);
+        }
+        #span1{
+            margin-left: 50%;
+            margin-top: 8%; 
+            font-size: 30px;
+            color: white;
+        }
+        #num{
+            font-size: 30px;
+        }
+        #name{
+            font-size: 40px;
+        }
+        #son{
+            width: 100%;
+            height: 200px;
+            text-decoration: none;
+            background-image: url(imgs/son.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #alli{
+            width: 100%;
+            height: 200px;
+            text-decoration: none;
+            background-image: url(imgs/alli.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;  
+        }
+        #kane{
+            width: 100%;
+            height: 200px;
+            text-decoration: none;
+            background-image: url(imgs/kane.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .view>a>span{
+            position: absolute;
+            text-align: center;
+            margin-left: 5%;
+            margin-top: 4%;
+            color: white;
+            font-size: 40px;
+            font-family: 'Bangers', cursive;
+            display: none;
+            color: rgba(255, 255, 255, 1);
+        }
+                #title>a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+   <header>
+      <div class="menu">
+        <div class="logo_wrapper">
+          <div class="menu_logo"></div>
+          <div>
+            <a href="#">
+                <span>Tottenham</span> 
+                <span>HotSpur</span>
+            </a>
+          </div>
+        </div>
+        <span><a href="#">TEAMS</a></span>
+        <span><a href="#">STADIUM</a></span>
+        <span><a href="#">OUR PLAYERS</a></span>
+        <span><a href="#">TICKETS</a></span>
+        <span>
+            <a href="#"><i class="far fa-user"></i></a
+        ></span>
+      </div>
+    </header>
+    
+    <div class="maintop">
+
+        <div id="title"><a href="highlight_main.html">HighLight</a></div>
+
+    </div>
+    <div class="div1">
+    <div id="con">
+
+        <div id="main">
+            <div class="main_1">
+           <iframe width="80%" height="850" src="https://www.youtube.com/embed/3KDEda3MI8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+                <div id="side1">
+                    <div id="newview">Other videos</div>
+            <div class="side1_1">
+                <div class="side1_2">
+                    
+                <div class="view">
+                    <a id="alli" href="highLight_alli.html" width="100%" height="200">
+                    <span>Alli_HighLight</span></a> 
+                </div>
+                    
+                <div class="view">
+                    <a id="son" href="highLight_son.html" width="100%" height="200"><span>Son_HighLight</span></a> 
+                </div>
+    
+                <div class="view">
+                    <a id="kane" href="highLight_kane.html" width="100%" height="200">
+                    <span>Kane_HighLight</span></a> 
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+            <div class="footer_1">
+                
+                    <div class="footer_2_1"></div>
+                    <div id="text2">
+                    <p id="span1">
+                       7번<br>
+                            <br>
+                        <span id="num"> 손 </span><span id="name"> 흥민</span>
+                            <br><br>
+                         출생:1992년 7월 8일 (한국 춘천)
+                    </p>
+                    </div>
+                
+                    <div class="footer_2_2"></div>
+            </div>
+                
+                <div class="footer_3">
+                <div id="text">선수 시즌 통계</div>
+                <div class="footer_3_1"></div>   
+                </div>
+        </div>
+    </div>
+                
+                
+            
+            
+        
+    
+    
+    
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+    
+        <script>
+        $(function(){
+            $(".view").mouseover(function(){
+                var index = $(".view").index($(this));
+               $(this).css("opacity","0.8");
+                
+                if(index == 0){
+                $("#alli>span").css("display","block");
+                }
+                if(index == 1){
+                $("#son>span").css("display","block");
+                }
+                if(index == 2){
+                $("#kane>span").css("display","block");
+                }
+                
+            });
+            $(".view").mouseout(function(){
+                var index = $(".view").index($(this));
+               $(this).css("opacity","1");
+                
+                if(index == 0){
+                $("#alli>span").css("display","none");
+
+                }
+                if(index == 1){
+                $("#son>span").css("display","none");
+
+                }
+                if(index == 2){
+                $("#kane>span").css("display","none");
+
+                }
+            });
+            
+           
+            
+        });
+    </script>
+
+</body>
+</html>

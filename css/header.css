@@ -6,7 +6,6 @@ header {
 
 .menu {
   display: flex;
-  justify-content: space-around;
   height: 100%;
   align-items: center;
 }
@@ -20,10 +19,9 @@ header {
 .logo_wrapper {
   display: flex;
   align-items: center;
-  margin-right: 30px;
 }
 
-.logo_wrapper a:last-child {
+a .logo_wrapper div {
   display: flex;
   flex-direction: column;
 }
@@ -37,4 +35,12 @@ header {
   background-size: contain;
   width: 80px;
   height: 80px;
+}
+
+.menu > span {
+  margin: 0 60px;
+}
+
+.menu > span:last-of-type {
+  /* background-color: red; */
 }

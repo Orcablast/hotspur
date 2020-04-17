@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="format/color.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #grand a {
+        text-decoration: none;
+        width: 25%;
+      }
+      .subMenu > span {
+        background-color: #0c204c;
+        padding-left: 190px;
+        padding-right: 190px;
+        overflow: hidden;
+      }
+      .subMenu {
+        height: 45px;
+        font-size: 30px;
+        background-color: #0c204c;
+        width: 100%;
+        overflow: hidden;
+      }
+      .subMenu a {
+        color: white;
+      }
+      img {
+        width: 400px;
+        height: 500px;
+      }
+      .detail > div {
+        float: left;
+        width: 400px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 100px 180px;
+        overflow: hidden;
+      }
+      .wishlist a {
+        width: 100%;
+        height: 50px;
+        background-color: #0c204c;
+        color: white;
+      }
+      .wishlist {
+        width: 400px;
+        background-color: #0c204c;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      $(function () {
+        var count = 1;
+        $("#wish").parent("div").addClass("wishlist");
+
+        $("button")
+          .first()
+          .click(function () {
+            if (count > 1) {
+              $("button")
+                .next()
+                .html(" " + --count + " ");
+            }
+          });
+
+        $("button")
+          .last()
+          .click(function () {
+            $("button")
+              .prev("span")
+              .html(" " + ++count + " ");
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="logo_wrapper">
+          <div class="menu_logo"></div>
+          <div>
+            <a href="#"><span>Tottenham</span> <span>HotSpur</span></a>
+          </div>
+        </div>
+        <span><a href="#">TEAMS</a></span>
+        <span><a href="#">STADIUM</a></span>
+        <span><a href="#">OUR PLAYERS</a></span>
+        <span><a href="#">TICKETS</a></span>
+        <span
+          ><a href="#"><i class="far fa-user"></i></a
+        ></span>
+      </div>
+    </header>
+    <div id="grand">
+      <div class="subMenu">
+        <span><a href="goods_main_clothes.html">Clothes</a></span>
+        <span><a href="goods_main_caps.html">Caps</a></span>
+        <span><a href="goods_main_balls.html">Balls</a></span>
+        <span><a href="goods_main_toys.html">Toys</a></span>
+      </div>
+      <div class="detail">
+        <div><img src="imgs/01_89338-00002.jpg" /></div>
+        <div>
+          나이키 사이즈 1 스킬 축구공
+          <hr />
+          <h3>\21,400</h3>
+          수량
+          <button>-</button><span> 1 </span><button>+</button><br />
+          <div><a id="wish" href="#">wish list</a></div>
+          <br />
+          손흥민이 될 수 있는 기회<br />놓치지 마세요
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+  </body>
+</html>

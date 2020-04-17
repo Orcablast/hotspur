@@ -25,44 +25,59 @@
     </div>
     <header>
       <div class="menu">
-        <div class="logo_wrapper">
-          <div class="menu_logo"></div>
-          <div>
-            <a href="#"><span>Tottenham</span> <span>HotSpur</span></a>
+        <a href="index.html">
+          <div class="logo_wrapper">
+            <div class="menu_logo"></div>
+            <div><span>Tottenham</span><span>HotSpur</span></div>
           </div>
-        </div>
-        <span><a href="#">TEAMS</a></span>
+        </a>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
         <span><a href="#">STADIUM</a></span>
         <span><a href="#">OUR PLAYERS</a></span>
-        <span><a href="#">TICKETS</a></span>
-        <span
-          ><a href="#"><i class="far fa-user"></i></a
-        ></span>
+        <span><a href="ticket.html">TICKETS</a></span>
+        <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
+        <span><a href="goods_main_balls.html">SHOP</a></span>
+        <span class="dh-user"
+          ><a href="#"><i class="far fa-user"></i> </a>
+          <div class="dh-myinfo">
+            <a href="Tottenham_insertMem.html">회원가입</a>
+            <a href="login.html">로그인</a>
+          </div>
+        </span>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="main_top">
+        <div class="playerVideo">
+          <img src="./imgs/main/videoThumb.png" />
+          <i class="fas fa-play-circle"></i>
+        </div>
+        <div class="playerDesc">
+          <h1>Player of Month</h1>
+          <h3>Son</h3>
+          <h2>Heung-Min</h2>
+          <h4>Born: 08 July 1992 (Chuncheon, South Korea)</h4>
+          <span
+            >South Korean international superstar Heung-Min Son <br />
+            has endeared himself to the Spurs faithful with some fantastic
+            goalscoring displays since signing from Bayer Leverkusen in August,
+            2015. <br /><br />
+            The 2018/19 campaign saw Sonny hit the 20-goal mark for the second
+            time in three seasons, despite missing game time through two
+            separate spells of international duty with South Korea. He really
+            kick-started his season with a wonderful solo goal in the 3-1 home
+            win over Chelsea in November, 2018, voted the Premier League's EA
+            SPORTS Goal of the Month and, later, our Goal of the Season.</span
+          >
+        </div>
+        <div></div>
+      </div>
+      <div class="main_bot"></div>
+    </main>
     <footer>
       <span>All right not reserved by KH</span>
     </footer>
   </body>
-  <script>
-    var imgNums = 7;
-
-    $(function () {
-      setInterval(slideAnimation, 5000);
-
-      function getImgNum() {
-        return Math.floor(Math.random() * imgNums) + 1;
-      }
-
-      function imgSlide() {
-        $(".main_scrn img").attr("src", "./imgs/bg/" + getImgNum() + ".png");
-      }
-
-      function slideAnimation() {
-        $(".main_scrn img").animate({ opacity: "0" }, "slow", imgSlide);
-        $(".main_scrn img").animate({ opacity: "0.65" }, "slow");
-      }
-    });
-  </script>
+  <script src="js/mainScrn.js"></script>
+  <script src="js/mainScrl.js"></script>
 </html>

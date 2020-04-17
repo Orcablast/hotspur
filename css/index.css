@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Comic+Neue:ital,wght@1,300&family=Girassol&family=Playfair+Display:wght@500&display=swap");
 
 .header_screen {
   width: 100%;
@@ -56,4 +57,136 @@
   to {
     opacity: 1;
   }
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #16274b; */
+}
+
+.main_top {
+  width: 1700px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.main_top {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.main_top div {
+  width: 470px;
+}
+
+.main_top div:not(:last-of-type) {
+  margin-right: 75px;
+}
+
+.playerDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.playerDesc span {
+  font-size: 16px;
+  font-family: "Comic Neue", cursive;
+}
+
+.playerDesc h3 {
+  font-size: 40px;
+}
+
+.playerDesc h2 {
+  font-size: 50px;
+  margin-bottom: 90px;
+}
+
+.playerDesc h3,
+.playerDesc h2 {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+}
+
+.playerDesc h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Girassol", cursive;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.playerDesc h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.main_top div:last-of-type {
+  background-color: inherit;
+  background-image: url("../imgs/main/bestPlayer.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main_bot {
+  margin-top: 5px;
+  width: 95%;
+  height: 200px;
+  background-color: sandybrown;
+}
+
+.playerVideo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.playerVideo img {
+  width: 100%;
+}
+
+.playerVideo i {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  left: 210px;
+  opacity: 0.4;
+}
+
+.playerVideo i:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.dh-myinfo {
+  text-decoration: none;
+  cursor: pointer;
+  width: 150px;
+  height: 100px;
+  background-color: lemonchiffon;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dh-myinfo a {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.dh-user {
+  position: relative;
 }

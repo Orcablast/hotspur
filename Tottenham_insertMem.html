@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <style>
+      body {
+        width: 1920px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .content {
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 80%;
+        background-color: #16274b;
+      }
+
+      .title {
+        color: white;
+        margin-bottom: 0;
+        margin-left: 310px;
+      }
+
+      .frame {
+        width: 60%;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid #16274b;
+      }
+
+      .info {
+        text-align: center;
+        height: 11%;
+        position: relative;
+      }
+
+      .info:first-of-type {
+        margin-top: 50px;
+      }
+
+      .info > label {
+        position: absolute;
+        font-weight: 900;
+        font-size: 20px;
+        color: #16274b;
+      }
+
+      .info > input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid lightgray;
+        width: 80%;
+        height: 50%;
+
+        background-color: white;
+      }
+
+      .info span {
+        color: red;
+        font-size: 12px;
+      }
+
+      .button {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      form {
+        width: 100%;
+        height: 100%;
+      }
+      .button > input {
+        width: 110px;
+        height: 50px;
+        border-radius: 10px;
+        border: 0;
+        background-color: #16274b;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    </style>
+    <script>
+      var chk = [false, false, false, false, false];
+      $(function () {
+        $(".info").children("input").val("");
+        $(".info")
+          .children("input")
+          .focusin(function () {
+            $(this).css("outline", "0");
+            $(this).siblings("label").animate({
+              fontSize: "15px",
+              top: "-17px",
+            });
+          });
+        $(".info")
+          .children("input")
+          .focusout(function () {
+            if ($(this).val() == "") {
+              $(this).siblings("label").animate({
+                fontSize: "20px",
+                top: "0px",
+              });
+            }
+          });
+        $("#id").change(function () {
+          $(this).siblings("label").children().html("");
+          var regExp = /^[a-z0-9]{4,12}$/;
+          if (regExp.test($(this).val())) {
+            chk[0] = true;
+          } else {
+            $(this)
+              .siblings("label")
+              .children()
+              .html("영어소문자+숫자 4~12자리");
+            chk[0] = false;
+          }
+        });
+        $("#pw").change(function () {
+          $(this).siblings("label").children().html("");
+          var regExp = /^[A-Za-z0-9]{6,18}$/;
+          if (regExp.test($(this).val())) {
+            chk[1] = true;
+          } else {
+            $(this)
+              .siblings("label")
+              .children()
+              .html("영어소문자+숫자 6~18자리");
+            chk[1] = false;
+          }
+        });
+        $("#pw_re").change(function () {
+          $(this).siblings("label").children().html("");
+          if ($(this).val() == $("#pw").val()) {
+            chk[2] = true;
+          } else {
+            $(this)
+              .siblings("label")
+              .children()
+              .html("비밀번호를 확인해주세요");
+            chk[2] = false;
+          }
+        });
+        $("#email").change(function () {
+          $(this).siblings("label").children().html("");
+          var regExp = /^[a-z][a-z0-9_-]{3,11}@([a-z\d\.-]+)\.([a-z\.]{2,6})$/;
+          if (regExp.test($(this).val())) {
+            chk[3] = true;
+          } else {
+            $(this)
+              .siblings("label")
+              .children()
+              .html("email형식을 확인해주세요");
+            chk[3] = false;
+          }
+        });
+        $("#name").change(function () {
+          $(this).siblings("label").children().html("");
+          var regExp = /^[가-힣]{2,4}$/;
+          if (regExp.test($(this).val())) {
+            chk[4] = true;
+          } else {
+            $(this).siblings("label").children().html("한글 2-4글자");
+            chk[4] = false;
+          }
+        });
+        $("form").submit(function () {
+          var count = 0;
+          for (var i = 0; i < chk.length; i++) {
+            if (chk[i] == true) {
+              count++;
+            }
+          }
+          if (count < 5) {
+            return false;
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html">
+          <div class="logo_wrapper">
+            <div class="menu_logo"></div>
+            <div><span>Tottenham</span><span>HotSpur</span></div>
+          </div>
+        </a>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
+        <span><a href="#">STADIUM</a></span>
+        <span><a href="#">OUR PLAYERS</a></span>
+        <span><a href="ticket.html">TICKETS</a></span>
+        <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
+        <span><a href="goods_main_balls.html">SHOP</a></span>
+        <span class="dh-user"
+          ><a href="#"><i class="far fa-user"></i> </a>
+          <div class="dh-myinfo">
+            <a href="Tottenham_insertMem.html">회원가입</a>
+            <a href="login.html">로그인</a>
+          </div>
+        </span>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="title">
+        <h1>회원가입</h1>
+      </div>
+      <div class="frame">
+        <form action="join">
+          <div class="info">
+            <label for="id">ID*<span></span></label>
+            <input type="text" id="id" name="id" />
+          </div>
+          <div class="info">
+            <label for="pw">PASSWORD*<span></span></label>
+            <input type="password" id="pw" name="pw" />
+          </div>
+          <div class="info">
+            <label for="pw_re">PASSWORD_RE*<span></span></label>
+            <input type="password" id="pw_re" name="pw_re" />
+          </div>
+          <div class="info">
+            <label for="email">EMAIL<span></span></label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="info">
+            <label for="name">NAME*<span></span></label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="info">
+            <label for="addr">ADDRESS</label>
+            <input type="text" id="addr" name="addr" />
+          </div>
+          <div class="button">
+            <input type="submit" value="Sign up" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+  </body>
+</html>
