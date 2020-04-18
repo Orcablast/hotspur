@@ -2,6 +2,7 @@ $(function () {
   $("footer").toggle();
   $("main").toggle();
   $(".dh-myinfo").toggle();
+  $(".i_scroll_after").toggle();
   enable();
 
   function userMenu() {
@@ -24,6 +25,7 @@ $(function () {
     setTimeout(enable, 300);
     $("main").fadeToggle();
     $("footer").toggle();
+    $(".i_scroll_after, .i_scroll_before").toggle();
 
     if ($("main").css("display") == "none") {
       $(".dh-user i").off("click");
