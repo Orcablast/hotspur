@@ -112,11 +112,12 @@
       $(function () {
         if (document.body.scrollHeight > 970) {
           console.log("스크롤 페이지");
-          $("body").on("click", pageScrl);
+          window.addEventListener("wheel", pageScrl);
         }
 
         function pageScrl() {
           console.log("pageScrl 동작");
+          console.log(window.scrollY);
         }
       });
     </script>
