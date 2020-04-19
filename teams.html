@@ -108,5 +108,17 @@
       <span>All right not reserved by KH</span>
     </footer>
     <script src="js/userIcon.js"></script>
+    <script>
+      $(function () {
+        if (document.body.scrollHeight > 970) {
+          console.log("스크롤 페이지");
+          $("body").on("click", pageScrl);
+        }
+
+        function pageScrl() {
+          console.log("pageScrl 동작");
+        }
+      });
+    </script>
   </body>
 </html>

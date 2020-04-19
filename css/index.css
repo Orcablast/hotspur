@@ -181,20 +181,6 @@ main {
   cursor: pointer;
 }
 
-.menu a:hover,
-.menu i:hover {
-  opacity: 0.5;
-}
-
-.menu > span:not(:last-of-type):hover {
-  transform: translateY(-2px);
-  transition: transform 0.5s;
-}
-
-.menu {
-  position: relative;
-}
-
 .icon-scroll,
 .i_scroll_before,
 .i_scroll_after {
