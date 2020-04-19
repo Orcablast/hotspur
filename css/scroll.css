@@ -1,0 +1,19 @@
+.scrl_page_footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.scrl_page_main {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.scrl_page_header {
+  position: fixed;
+  top: 0;
+}
+
+.scrolled {
+  opacity: 0.85;
+  background-color: #111836;
+}
