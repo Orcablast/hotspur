@@ -2,7 +2,6 @@ $(function () {
   if (document.body.scrollHeight > 970) {
     console.log("스크롤 페이지");
     window.addEventListener("wheel", pageScrl);
-    $("footer").addClass("scrl_page_footer scroll");
     $("main").addClass("scrl_page_main");
     $("header").addClass("scrl_page_header");
   }
@@ -22,20 +21,8 @@ $(function () {
       });
     }
 
-    if (
-      $("footer").css("display") == "none" &&
-      pageY > document.body.scrollHeight - window.innerHeight - 100
-    ) {
-      $("footer").slideToggle(150, function () {
-        $(this).clearQueue();
-      });
-    } else if (
-      $("footer").css("display") != "none" &&
-      pageY < document.body.scrollHeight - window.innerHeight
-    ) {
-      $("footer").slideToggle(200, function () {
-        $(this).clearQueue();
-      });
+    if (pageY < 50) {
+      $("header").removeClass("scrolled");
     }
   }
 });
