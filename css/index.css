@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poor+Story&family=Stylish&display=swap&family=Girassol&display=swap");
+
 .header_screen {
   width: 100%;
   height: calc(100vh - 100px);
