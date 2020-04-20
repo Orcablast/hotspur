@@ -1,0 +1,202 @@
+
+        body{
+            width: 100%;
+        }
+        hr{
+            border: 0.1px solid black;
+            
+        }
+        
+footer {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(12, 18, 43);
+  display: flex;
+}
+
+footer span {
+  font-size: 14px;
+  color: white;
+}
+        
+       a>div>span{
+            position: absolute;
+            text-align: center;
+           margin-left: 3%;
+           margin-top: 5.5%;
+            color: black;
+            font-size: 60px;
+            display: none;
+            font-family: 'Bangers', cursive;
+            color: rgba(0, 0, 0, 1);
+        }
+
+
+        
+        
+         .ul1>li>div>a{
+            height: 50xpx;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+        
+        .sc1>td{
+            height: 10px;
+            width: 22px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .sc1{
+            display: inline-block;
+        }
+        .sc1>td>a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            text-align: center;
+            line-height: 20px;
+        }
+        
+        #title>a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        .maintop{
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(45deg,rgba(17, 24, 54),white);
+            position: relative;
+        }
+        
+        #title{
+            margin: 0;
+            line-height: 200%;
+            margin-left: 3%;
+            text-decoration: none;
+            font-size: 50px;
+            margin-left: 5%;
+            font-family: "Bangers", cursive;
+      }
+        
+        #side{
+            margin-left: 1%;
+            border-radius: 30px;
+            width: 19%;
+            float: left;
+            height: 700px;
+            margin-top: 2%;
+            background: linear-gradient(185deg,rgba(17, 24, 54, 0.5),white);
+            position: fixed;
+            transition-duration: 1s;
+        }
+        .main{
+            
+            width: 79%;
+            float: right;
+        }
+        #main_news{
+
+            margin-top: 3%;
+            height: 400px;
+        }
+        #border{
+   
+            width: 100%;
+            height: 400px;
+            margin-top: 2%;
+        }
+
+        .new1{
+            border: 1px solid black;
+            width: 20%;
+            height: 300px;
+            display: inline-block;
+            margin-left: 10%;
+        }
+        table{
+           
+            width: 94%;
+            text-align: center;
+            line-height: 200%;
+            margin-left: 2%;
+        }
+        .me{
+            border: 1px solid black;
+            background: linear-gradient(45deg,rgba(17, 24, 54, 0.5),white);
+        }
+
+        .num{
+            width: 4%;
+            height: 35px;
+           
+
+        }
+        .title{
+            width: 60%;
+
+        }
+        .name{
+            width: 10%;
+
+        }
+        .day{
+            width: 10%;
+
+        }
+        .view{
+            width: 10%;
+  
+        }
+
+        div>a:first-child>.new1{
+            background-image: url(../imgs/news_imgs1.jpg);
+            background-position: center;
+        }
+        div>a:nth-child(2n)>.new1{
+            background-image: url(../imgs/news_imgs2.jpg);
+            background-position: center;
+        }
+        div>a:last-child>.new1{
+            background-image: url(../imgs/news_imgs3.jpg);
+            background-position: center;
+        }
+        
+        #side>.side_menu1{
+            border: 0px solid black;
+            border-radius: 20px;
+            width: 90%;
+            height: 40%;
+            margin: 0 auto;
+            margin-top: 10%;
+            background-image: url(../imgs/image_34b09e36ee0424a81ef1037b6f69306f_99_20150709151807.jpg);
+            background-position: center;
+            transition-duration: 1s;
+        }
+        
+        #side>.side_menu2{
+            border: 0px solid black;
+            border-radius: 20px;
+            width: 90%;
+            height: 40%;
+            margin: 0 auto;
+            margin-top: 10%;
+            background-image: url(../imgs/bg/5.png);
+            transition-duration: 1s;
+        }
+        #side>div>a>span{
+            position: absolute;
+            text-align: center;
+           margin-left: 6%;
+           margin-top: 30%;
+            color: black;
+            font-size:50px;
+            display: none;
+            font-family: 'Bangers', cursive;
+            color: rgba(255, 255, 255, 1);
+            
+        }

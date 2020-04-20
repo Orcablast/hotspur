@@ -1,0 +1,148 @@
+#combtn{
+    width: 5%;
+    height: 100px;
+    margin-top: 1%;
+}
+
+#com{
+    margin-top: 1%;
+}
+
+#com>div{
+    margin-top: 1%;
+}
+        
+        #t_1{
+            font-size: 20px;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 3%;
+        }
+
+        #imge1{
+            background-image: url(../imgs/news_imgs3.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 60%;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 3%;  
+        }
+
+
+    .title{
+            border-bottom: 1px solid cornflowerblue;
+            height: 80px;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 70px;
+            font-size: 30px;
+        }
+        #name{
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        #day{
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        
+        #modify{
+            margin-top: 10px;
+            margin-right: 20px;
+            font-weight: bold;
+            float: right;
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: linear-gradient(145deg,rgba(17, 24, 54, 0.5),white);
+            border-radius: 20px;
+            
+        }
+        .text{
+            margin-top: 20px;
+            display: block;
+            border: 1px solid black; 
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 3%;
+            font-weight: bold;
+            position: relative;   
+        }
+        .view{
+         
+            right: 10px;
+            bottom: 10px;
+            position: absolute;
+            z-index: 1000;
+        }
+        .comment{
+            margin-top: 10px;
+            margin-bottom: 30px;
+            width: 80%;
+            border-top: 1px solid cornflowerblue;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .user{
+            
+            font-weight: bold;
+        }
+        .commenttext{
+            margin-top: 10px;
+            height: auto;
+            border: 1px solid black;
+            width: 80%;
+            text-align: center;
+        }
+        .usertime{
+           text-align: right;
+        }
+        .commentbox{
+            margin-left: 200px;
+            margin-bottom: 20px;
+        }
+        .exit{
+            display: inline-block;
+            float: right;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            background:  linear-gradient(145deg,rgba(17, 24, 54, 0.5),white);
+            height: 30px;
+            width: 80px;
+            line-height: 30px;
+            text-align: center;
+            
+        }
+        .exit>a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .com1{
+            margin-left: 60px;
+            margin-bottom: 30px;
+            margin-left: 10%;
+            
+        }
+        textarea{
+            resize: none;
+            height: 100px;
+            width: 80%;
+            float: left;
+            margin-right: 10px;
+            
+        }
+        #sub{
+            display: block;
+            height: 106px;
+            width: 100px;
+            
+        }

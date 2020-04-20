@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="https://kit.fontawesome.com/8bd2671777.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		body {
+			width: 1920px;
+		}
+
+		.content {
+			margin: 0 auto;
+			width: 70%;
+			border: 1px solid black;
+			overflow: hidden;
+			
+		}
+
+		.navi {
+			width: 100%;
+			overflow: hidden;
+			background-color: #16274B;
+
+
+		}
+
+		.navi>ul {
+			margin: 0 auto;
+			margin-left: 65px;
+
+			width: 100%;
+			list-style: none;
+
+		}
+
+		.navi>ul>li>a {
+			border-top: 1px solid #16274B;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 45px;
+			font-weight: 500;
+			color: white;
+			font-size: 25px;
+			float: left;
+			width: 20%;
+			height: 50px;
+			
+			background-color: #16274B;
+			text-decoration: none;
+		}
+
+		.navi li>a:hover {
+			color: #C6F43E;
+			border-top: 1px solid #C6F43E;
+
+		}
+
+		.title {
+			font-size: 30px;
+			width: 9%;
+			margin-left: 30px;
+			font-weight: 600;
+			border: 1px solid blue;
+			padding-bottom: 10px;
+			border-bottom: 2px solid gray;
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			margin-top: 120px;
+			margin-bottom: 50px;
+		}
+
+		.box {
+			float: left;
+			margin-top: 30px;
+
+			width: 33%;
+			height: 400px;
+			overflow: hidden;
+		}
+
+		.pho>a>img {
+
+
+			margin-left: 37px;
+			width: 80%;
+			height: 300px;
+		}
+
+		.text {
+			margin-left: 35px;
+			width: 80%;
+			border: 2px solid #16274B;
+		}
+
+		.text:hover {
+			border: 2px solid #4DB1E6;
+		}
+
+		.name {
+			text-align: left;
+			box-sizing: border-box;
+			width: 70%;
+			height: auto;
+			float: left;
+			font-size: 25px;
+			margin-top: 10px;
+
+
+		}
+
+		.num {
+			box-sizing: border-box;
+			width: 30%;
+			height: 100px;
+			float: left;
+
+			text-align: center;
+			line-height: 80px;
+			font-size: 70px;
+			overflow: hidden;
+		}
+
+		.born {
+
+			box-sizing: border-box;
+
+			width: 100%;
+			text-align: left;
+
+			font-size: 15px;
+			height: 30px;
+		}
+	</style>
+	<script>
+		$(function() {
+			$(".pho>a>img").hover(function() {
+				$(this).parent().parent().siblings(".text").css("border", "2px solid #4DB1E6");
+			}, function() {
+				$(this).parent().parent().siblings(".text").css("border", "2px solid #16274B");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="menu">
+			<div class="logo_wrapper">
+				<div class="menu_logo"></div>
+				<div>
+					<a href="#"><span>Tottenham</span> <span>HotSpur</span></a>
+				</div>
+			</div>
+			<span><a href="#">TEAMS</a></span>
+			<span><a href="#">STADIUM</a></span>
+			<span><a href="#">OUR PLAYERS</a></span>
+			<span><a href="#">TICKETS</a></span>
+			<span><a href="#"><i class="far fa-user"></i></a></span>
+		</div>
+	</header>
+	<div class="content">
+		<div class="navi">
+			<ul>
+				<li><a href="Tottenham_player1.html">Player</a></li>
+				<li><a href="#">Coaching Staff</a></li>
+				<li><a href="#">League Table</a></li>
+				<li><a href="#">Stats</a></li>
+			</ul>
+		</div>
+		<div class="title">Player</div>
+		<div class="box">
+			<div class="pho"><a href="Tottenham_Lloris.html"><img src="imgs/firstteam_hugolloris.png"></a></div>
+			<div class="text">
+				<div class="name">Hugo Lloris
+					<div class="born">Nice,France</div>
+				</div>
+				<div class="num">1</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_tobyalderweireld.png"></a></div>
+			<div class="text">
+				<div class="name">Toby Alderweireld
+					<div class="born">Wilrijk,Belgium</div>
+				</div>
+				<div class="num">4</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_janvertonghen.png"></a></div>
+			<div class="text">
+				<div class="name">Jan Vertonghen
+					<div class="born">Sint-niklaas,Belgium</div>
+				</div>
+				<div class="num">5</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_davinsonsanchez.png"></a></div>
+			<div class="text">
+				<div class="name">Davinson Sanchez
+					<div class="born">Caloto,Colombia</div>
+				</div>
+				<div class="num">6</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_heungminson.png"></a></div>
+			<div class="text">
+				<div class="name">Heung-Min Son
+					<div class="born">Chuncheon,South Korea</div>
+				</div>
+				<div class="num">7</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_harrywinks.png"></a></div>
+			<div class="text">
+				<div class="name">Harry Winks
+					<div class="born">Hamel Hempstead,England</div>
+				</div>
+				<div class="num">8</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_harrykane.png"></a></div>
+			<div class="text">
+				<div class="name">Harry Kane
+					<div class="born">London,England</div>
+				</div>
+				<div class="num">10</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_eriklamela.png"></a></div>
+			<div class="text">
+				<div class="name">Erik Lamela
+					<div class="born">Carapachay,Argentina</div>
+				</div>
+				<div class="num">11</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_michelvorm2.png"></a></div>
+			<div class="text">
+				<div class="name">Michel Vorm
+					<div class="born">Utrecht,Netherlands</div>
+				</div>
+				<div class="num">13</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_ericdier.png"></a></div>
+			<div class="text">
+				<div class="name">Erik Dier
+					<div class="born">Cheltenham,England</div>
+				</div>
+				<div class="num">15</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_moussasissoko.png"></a></div>
+			<div class="text">
+				<div class="name">Moussa Sissoko
+					<div class="born">Le Blanc-Mensnil,France</div>
+				</div>
+				<div class="num">17</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_giovanilocelso.png"></a></div>
+			<div class="text">
+				<div class="name">Ginovani Lo Celso
+					<div class="born">Rosario,Argentina</div>
+				</div>
+				<div class="num">18</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_ryansessegnon.png"></a></div>
+			<div class="text">
+				<div class="name">Ryan Sessegnon
+					<div class="born">Roehmptom,London</div>
+				</div>
+				<div class="num">19</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pho"><a href="#"><img src="imgs/firstteam_delealli.png"></a></div>
+			<div class="text">
+				<div class="name">Dele Alli
+					<div class="born">Milton Keynes,England</div>
+				</div>
+				<div class="num">20</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<span>All right not reserved by KH</span>
+	</footer>
+</body></html>
