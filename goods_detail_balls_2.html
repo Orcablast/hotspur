@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Balls</title>
+    <title>Insert title here</title>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -13,7 +13,6 @@
       src="https://kit.fontawesome.com/8bd2671777.js"
       crossorigin="anonymous"
     ></script>
-
     <style>
       #grand a {
         text-decoration: none;
@@ -25,15 +24,6 @@
         padding-right: 190px;
         overflow: hidden;
       }
-      .title {
-        width: 100%;
-        color: #0c204c;
-        font-size: 80px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 50px;
-        position: relative;
-      }
       .subMenu {
         height: 45px;
         font-size: 30px;
@@ -44,28 +34,59 @@
       .subMenu a {
         color: white;
       }
-      #grand img {
-        width: 300px;
-        height: 360px;
+      img {
+        width: 400px;
+        height: 500px;
       }
-      .product a {
-        margin: 0 auto;
-        margin-bottom: 100px;
-        color: black;
-        display: block;
-        width: 300px;
-        text-align: center;
+      .detail > div {
         float: left;
-        text-align: center;
+        width: 400px;
+        box-sizing: border-box;
         position: relative;
+        margin: 100px 180px;
+        overflow: hidden;
       }
-
-      .product {
+      .wishlist a {
         width: 100%;
-        display: flex;
-        justify-content: center;
+        height: 50px;
+        background-color: #0c204c;
+        color: white;
+      }
+      .wishlist {
+        width: 400px;
+        background-color: #0c204c;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
       }
     </style>
+    <script>
+      $(function () {
+        var count = 1;
+        $("#wish").parent("div").addClass("wishlist");
+
+        $("button")
+          .first()
+          .click(function () {
+            if (count > 1) {
+              $("button")
+                .next()
+                .html(" " + --count + " ");
+            }
+          });
+
+        $("button")
+          .last()
+          .click(function () {
+            $("button")
+              .prev("span")
+              .html(" " + ++count + " ");
+          });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -95,7 +116,6 @@
         </span>
       </div>
     </header>
-
     <div id="grand">
       <div class="subMenu">
         <span><a href="goods_main_clothes.html">Clothes</a></span>
@@ -103,20 +123,18 @@
         <span><a href="goods_main_balls.html">Balls</a></span>
         <span><a href="goods_main_toys.html">Toys</a></span>
       </div>
-      <div class="title">Balls</div>
-      <div class="product">
-        <a href="goods_detail_balls_1.html"
-          ><img src="imgs/01_89338-00002.jpg" /><br />나이키 사이즈 1 스킬
-          축구공 \21,400</a
-        >
-        <a href="goods_detail_balls_2.html"
-          ><img src="imgs/01_95808-00002.jpg" /><br />박차 플루오 크기 5 축구
-          \19,700</a
-        >
-        <a href="goods_detail_balls_3.html"
-          ><img src="imgs/04_65291-00002.jpg" /><br />박차 복고풍 가죽 축구
-          \49,300</a
-        >
+      <div class="detail">
+        <div><img src="imgs/01_95808-00002.jpg" /></div>
+        <div>
+          박차 플루오 크기 5 축구
+          <hr />
+          <h3>\19,700</h3>
+          수량
+          <button>-</button><span> 1 </span><button>+</button><br />
+          <div><a id="wish" href="wishlist_balls_2.html">wish list</a></div>
+          <br />
+          손흥민이 될 수 있는 기회<br />놓치지 마세요
+        </div>
       </div>
     </div>
     <footer>

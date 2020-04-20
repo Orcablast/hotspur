@@ -19,12 +19,17 @@
       float: left;
       width: 500px;
       margin-top: 100px;
-      margin-bottom: 100px;
-      margin-left: 150px;
+      margin-bottom: 330px;
       position: relative;
-      padding-left: 50px;
       left: 200px;
     }
+
+    #grand > div:last-of-type {
+      margin-left: 150px;
+      padding-left: 50px;
+      margin-right: 200px;
+    }
+
     input {
       margin-top: 20px;
       height: 30px;
@@ -54,6 +59,12 @@
     #grand > div:first-child {
       border-right: 1px solid lightgray;
     }
+
+    #grand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   </style>
   <script>
     $(function () {
@@ -69,14 +80,18 @@
             <div><span>Tottenham</span><span>HotSpur</span></div>
           </div>
         </a>
-        <span><a href="Tottenham_player1.html">TEAMS</a></span>
-        <span><a href="#">STADIUM</a></span>
-        <span><a href="#">OUR PLAYERS</a></span>
+        <span><a href="teams.html">TEAMS</a></span>
+        <span><a href="Tottenham_player1.html">OUR PLAYERS</a></span>
         <span><a href="ticket.html">TICKETS</a></span>
         <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
-        <span><a href="goods_main_balls.html">SHOP</a></span>
+        <span><a href="#">VOTE</a></span>
+        <span><a href="goods_main_clothes.html">SHOP</a></span>
+        <div class="icon-scroll">
+          <div class="i_scroll_before"></div>
+          <div class="i_scroll_after"></div>
+        </div>
         <span class="dh-user"
-          ><a href="#"><i class="far fa-user"></i> </a>
+          ><i class="far fa-user"></i>
           <div class="dh-myinfo">
             <a href="Tottenham_insertMem.html">회원가입</a>
             <a href="login.html">로그인</a>
@@ -114,4 +129,5 @@
       <span>All right not reserved by KH</span>
     </footer>
   </body>
+  <script src="js/userIcon.js"></script>
 </html>

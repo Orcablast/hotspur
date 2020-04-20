@@ -5,6 +5,7 @@ footer {
   height: 50px;
   background-color: rgb(12, 18, 43);
   display: flex;
+  bottom: 0;
 }
 
 footer span {

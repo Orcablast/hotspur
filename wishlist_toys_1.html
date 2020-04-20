@@ -16,38 +16,23 @@
     <style>
       #grand a {
         text-decoration: none;
-        width: 25%;
-      }
-      .subMenu > span {
-        background-color: #0c204c;
-        padding-left: 190px;
-        padding-right: 190px;
-        overflow: hidden;
-      }
-      .subMenu {
-        height: 45px;
-        font-size: 30px;
-        background-color: #0c204c;
-        width: 100%;
-        overflow: hidden;
-      }
-      .subMenu a {
-        color: white;
       }
       img {
-        width: 400px;
-        height: 500px;
+        width: 200px;
+        height: 250px;
+      }
+      .detail {
+        display: inline-block;
+        position: relative;
       }
       .detail > div {
         float: left;
         width: 400px;
         box-sizing: border-box;
         position: relative;
-        margin: 100px 180px;
         overflow: hidden;
       }
       .wishlist a {
-        width: 100%;
         height: 50px;
         background-color: #0c204c;
         color: white;
@@ -61,20 +46,57 @@
         margin-top: 10px;
         font-size: 20px;
         font-weight: bold;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+
+      .total span {
+        background-color: lightgray;
+        width: 125px;
+      }
+      #grand > div:first-child {
+        width: 100%;
+        height: 50px;
+        background-color: #0c204c;
+        color: white;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+      }
+      table {
+        text-align: center;
+        margin: 100px;
+        position: relative;
+      }
+      .order {
+        position: relative;
+        left: 1000px;
+        bottom: 300px;
       }
     </style>
     <script>
       $(function () {
         var count = 1;
         $("#wish").parent("div").addClass("wishlist");
-
         $("button")
           .first()
           .click(function () {
             if (count > 1) {
               $("button")
-                .next()
+                .next("span")
                 .html(" " + --count + " ");
+              $("button")
+                .parent("td")
+                .siblings()
+                .last()
+                .children()
+                .last()
+                .html(count * 65700);
+              $(".order").find("span").eq(1).html(count);
+              $(".order")
+                .find("span")
+                .eq(3)
+                .html(count * 65700);
             }
           });
 
@@ -84,7 +106,27 @@
             $("button")
               .prev("span")
               .html(" " + ++count + " ");
+            $("button")
+              .parent("td")
+              .siblings()
+              .last()
+              .children()
+              .last()
+              .html(count * 65700);
+            $(".order").find("span").eq(1).html(count);
+            $(".order")
+              .find("span")
+              .eq(3)
+              .html(count * 65700);
+            var total = $("#price").html(count * 65700);
           });
+
+        $("a")
+          .first()
+          .click(function () {
+            alert("!주의! 장바구니가 모두 비워집니다.");
+          });
+        $("h3").last().css("float", "right");
       });
     </script>
   </head>
@@ -117,23 +159,35 @@
       </div>
     </header>
     <div id="grand">
-      <div class="subMenu">
-        <span><a href="goods_main_clothes.html">Clothes</a></span>
-        <span><a href="goods_main_caps.html">Caps</a></span>
-        <span><a href="goods_main_balls.html">Balls</a></span>
-        <span><a href="goods_main_toys.html">Toys</a></span>
-      </div>
+      <div>wish list</div>
       <div class="detail">
-        <div><img src="imgs/01_89338-00002.jpg" /></div>
-        <div>
-          나이키 사이즈 1 스킬 축구공
+        <table border="1">
+          <tr>
+            <td colspan="2">제품 상세</td>
+            <td width="100px">수량</td>
+            <td width="100px">가격</td>
+            <td width="100px">합계</td>
+          </tr>
+          <tr>
+            <td><img src="imgs/01_70823-00002.jpg" /></td>
+            <td width="250px">스퍼스 휴고 로리스 사커스타즈</td>
+            <td><button>-</button><span> 1 </span><button>+</button><br /></td>
+            <td>\8,300</td>
+            <td><span>\</span><span>8300</span></td>
+          </tr>
+        </table>
+        <div class="order">
+          주문 상세
           <hr />
-          <h3>\21,400</h3>
-          수량
-          <button>-</button><span> 1 </span><button>+</button><br />
-          <div><a id="wish" href="wishlist_balls_1.html">wish list</a></div>
+          <h3><span>\8,300 X </span><span>1</span></h3>
+          <h3><span>합계 : \</span><span>8300</span></h3>
           <br />
-          손흥민이 될 수 있는 기회<br />놓치지 마세요
+          <div class="total">
+            <i class="fas fa-shopping-basket"></i>
+            <a href="goods_main_clothes.html">계속 쇼핑하기</a>
+            <div><a id="wish" href="login.html">결제하기</a></div>
+            <br />
+          </div>
         </div>
       </div>
     </div>

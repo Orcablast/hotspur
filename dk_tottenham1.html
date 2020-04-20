@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script type="text/ecmascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        input {
+            width: 18%;
+            height: 50px;
+        }
+
+        button {
+            width: 9%;
+            height: 50px;
+        }
+
+        #div1 {
+            width: 70%;
+            height: 500px;
+            float: left;
+        }
+
+        #div {
+            
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .div1 {
+            background-color: rgba(255,255,255,0.5);
+            height: 500px;
+            border: 2px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #if {
+            width: 100%;
+            height: 500px;
+        }
+
+        #di {
+            background-color: antiquewhite;
+        }
+
+        .msg1 {
+            color: #004e66;
+            overflow: hidden;
+            height: 13%;
+            font-size: 1.5em;
+            border: 2px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: block
+        }
+
+        #h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        #div3{
+            background-color: rgba(255,255,255,0.5);
+            float: left;
+            width: 60%;
+            height: 500px;
+            border: 1px solid blue;
+        }
+        .div3{
+           color:  #1f4e5f;
+            height: 13%;
+            font-size: 1.5em;
+            border: 2px solid black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: block;
+        }
+        #div4{
+            float: left;
+            width: 39%;
+            height: 500px;
+            border: 1px solid blue;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       
+        #a{
+            background-image: url(imgs/111.jpg);
+            font-size: 1.5em;
+            color: blueviolet;
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        main{
+            text-align: center;
+            background-image: url(imgs/image_34b09e36ee0424a81ef1037b6f69306f_99_20150709151807.jpg);
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/8bd2671777.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        $(function() {
+            $(".msg1:eq(0)").css("display", "none");
+            $("#but").click(function() {
+                $(".msg1:eq(0)").css("display", "block");
+                $(".msg1:eq(0)").html($("#test").val());
+                $("#test").val("");
+            })
+        })
+
+    </script>
+    <header>
+        <div class="menu">
+            <div class="logo_wrapper">
+                <div class="menu_logo"></div>
+                <div>
+                    <a href="#"><span>Tottenham</span> <span>HotSpur</span></a>
+                </div>
+            </div>
+            <span><a href="#" id="aa">TEAMS</a></span>
+            <span><a href="#">STADIUM</a></span>
+            <span><a href="#">OUR PLAYERS</a></span>
+            <span><a href="#">TICKETS</a></span>
+            <span><a href="#"><i class="far fa-user"></i></a></span>
+        </div>
+    </header>
+    <main >
+        <br>
+        <div id="div">
+            <div>
+                <h1 id="h1">토트넘 VS 첼시</h1>
+            </div>
+            <br>
+            <hr><br>
+            <div id="div1"><iframe id="if" src="https://www.youtube.com/embed/c_vRVVAOY0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="div1">
+                <div id="di"><input type="text" id="test"><button id="but">댓글쓰기</button></div>
+                <div class="msg1"></div>
+                <div class="msg1">흥민오빠 너무 머싯어용</div>
+                <div class="msg1">개 ㅇㅈ..</div>
+                <div class="msg1">지가 해보던가 꼭 못하는것들이 저말밖에 못해요ㅋㅋㅋㅋㅋㅋ</div>
+                <div class="msg1">개발들인가 왜케못해!</div>
+            </div>
+            <div id="div3">
+                <div class="div3">아아 헤리케인 아주기가막힌 해딩골입니다!!!!</div>
+                <div class="div3">여윽시 손흥민 없으면 토트넘이 안돌아가죠~!</div>
+                <div class="div3">골~!!!!!손흥민 골입니다!!!</div>
+                <div class="div3">엄청난데요? 벌써3골째에요</div>
+                <div class="div3">모두들 손흥민에게 소리칩니다.</div>
+            </div>
+            <div id="div4"><img src="imgs/%EA%B2%BD%EA%B8%B0.PNG"></div>
+            <div>
+                <img src="imgs/%EA%B2%BD%EA%B8%B01.PNG">
+            </div>
+            <div>
+                <a id="a"href="#aa">맨위로</a>
+                
+            </div>
+            <div></div>
+        </div>
+    </main>
+    <footer>
+        <span>All right not reserved by KH</span>
+    </footer>
+</body>
+
+</html>

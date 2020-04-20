@@ -5,3 +5,17 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+#grand {
+  height: calc(100vh - 150px);
+}
+
+.wishlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

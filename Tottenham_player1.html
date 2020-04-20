@@ -15,10 +15,16 @@
     <style>
       body {
         width: 1920px;
+        overflow-x: hidden;
+      }
+
+      main {
+        width: 1920px;
+        display: flex;
+        justify-content: center;
       }
 
       .content {
-        margin: 0 auto;
         width: 70%;
         border: 1px solid black;
         overflow: hidden;
@@ -162,14 +168,18 @@
             <div><span>Tottenham</span><span>HotSpur</span></div>
           </div>
         </a>
-        <span><a href="Tottenham_player1.html">TEAMS</a></span>
-        <span><a href="#">STADIUM</a></span>
-        <span><a href="#">OUR PLAYERS</a></span>
+        <span><a href="teams.html">TEAMS</a></span>
+        <span><a href="Tottenham_player1.html">OUR PLAYERS</a></span>
         <span><a href="ticket.html">TICKETS</a></span>
         <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
-        <span><a href="goods_main_balls.html">SHOP</a></span>
+        <span><a href="#">VOTE</a></span>
+        <span><a href="goods_main_clothes.html">SHOP</a></span>
+        <div class="icon-scroll">
+          <div class="i_scroll_before"></div>
+          <div class="i_scroll_after"></div>
+        </div>
         <span class="dh-user"
-          ><a href="#"><i class="far fa-user"></i> </a>
+          ><i class="far fa-user"></i>
           <div class="dh-myinfo">
             <a href="Tottenham_insertMem.html">회원가입</a>
             <a href="login.html">로그인</a>
@@ -177,190 +187,193 @@
         </span>
       </div>
     </header>
-    <div class="content">
-      <div class="navi">
-        <ul>
-          <li><a href="Tottenham_player1.html">Player</a></li>
-          <li><a href="#">Coaching Staff</a></li>
-          <li><a href="#">League Table</a></li>
-          <li><a href="#">Stats</a></li>
-        </ul>
-      </div>
-      <div class="title">Player</div>
-      <div class="box">
-        <div class="pho">
-          <a href="Tottenham_Lloris.html"
-            ><img src="imgs/firstteam_hugolloris.png"
-          /></a>
+    <main>
+      <div class="content">
+        <div class="navi">
+          <ul>
+            <li><a href="Tottenham_player1.html">Player</a></li>
+            <li><a href="#">Coaching Staff</a></li>
+            <li><a href="#">League Table</a></li>
+            <li><a href="#">Stats</a></li>
+          </ul>
         </div>
-        <div class="text">
-          <div class="name">
-            Hugo Lloris
-            <div class="born">Nice,France</div>
+        <div class="title">Player</div>
+        <div class="box">
+          <div class="pho">
+            <a href="Tottenham_Lloris.html"
+              ><img src="imgs/firstteam_hugolloris.png"
+            /></a>
           </div>
-          <div class="num">1</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_tobyalderweireld.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Toby Alderweireld
-            <div class="born">Wilrijk,Belgium</div>
+          <div class="text">
+            <div class="name">
+              Hugo Lloris
+              <div class="born">Nice,France</div>
+            </div>
+            <div class="num">1</div>
           </div>
-          <div class="num">4</div>
         </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_janvertonghen.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Jan Vertonghen
-            <div class="born">Sint-niklaas,Belgium</div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_tobyalderweireld.png" /></a>
           </div>
-          <div class="num">5</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_davinsonsanchez.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Davinson Sanchez
-            <div class="born">Caloto,Colombia</div>
+          <div class="text">
+            <div class="name">
+              Toby Alderweireld
+              <div class="born">Wilrijk,Belgium</div>
+            </div>
+            <div class="num">4</div>
           </div>
-          <div class="num">6</div>
         </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_heungminson.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Heung-Min Son
-            <div class="born">Chuncheon,South Korea</div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_janvertonghen.png" /></a>
           </div>
-          <div class="num">7</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_harrywinks.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Harry Winks
-            <div class="born">Hamel Hempstead,England</div>
+          <div class="text">
+            <div class="name">
+              Jan Vertonghen
+              <div class="born">Sint-niklaas,Belgium</div>
+            </div>
+            <div class="num">5</div>
           </div>
-          <div class="num">8</div>
         </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_harrykane.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Harry Kane
-            <div class="born">London,England</div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_davinsonsanchez.png" /></a>
           </div>
-          <div class="num">10</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_eriklamela.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Erik Lamela
-            <div class="born">Carapachay,Argentina</div>
+          <div class="text">
+            <div class="name">
+              Davinson Sanchez
+              <div class="born">Caloto,Colombia</div>
+            </div>
+            <div class="num">6</div>
           </div>
-          <div class="num">11</div>
         </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_michelvorm2.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Michel Vorm
-            <div class="born">Utrecht,Netherlands</div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_heungminson.png" /></a>
           </div>
-          <div class="num">13</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_ericdier.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Erik Dier
-            <div class="born">Cheltenham,England</div>
+          <div class="text">
+            <div class="name">
+              Heung-Min Son
+              <div class="born">Chuncheon,South Korea</div>
+            </div>
+            <div class="num">7</div>
           </div>
-          <div class="num">15</div>
         </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_moussasissoko.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Moussa Sissoko
-            <div class="born">Le Blanc-Mensnil,France</div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_harrywinks.png" /></a>
           </div>
-          <div class="num">17</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_giovanilocelso.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Ginovani Lo Celso
-            <div class="born">Rosario,Argentina</div>
+          <div class="text">
+            <div class="name">
+              Harry Winks
+              <div class="born">Hamel Hempstead,England</div>
+            </div>
+            <div class="num">8</div>
           </div>
-          <div class="num">18</div>
         </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_ryansessegnon.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Ryan Sessegnon
-            <div class="born">Roehmptom,London</div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_harrykane.png" /></a>
           </div>
-          <div class="num">19</div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="pho">
-          <a href="#"><img src="imgs/firstteam_delealli.png" /></a>
-        </div>
-        <div class="text">
-          <div class="name">
-            Dele Alli
-            <div class="born">Milton Keynes,England</div>
+          <div class="text">
+            <div class="name">
+              Harry Kane
+              <div class="born">London,England</div>
+            </div>
+            <div class="num">10</div>
           </div>
-          <div class="num">20</div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_eriklamela.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Erik Lamela
+              <div class="born">Carapachay,Argentina</div>
+            </div>
+            <div class="num">11</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_michelvorm2.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Michel Vorm
+              <div class="born">Utrecht,Netherlands</div>
+            </div>
+            <div class="num">13</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_ericdier.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Erik Dier
+              <div class="born">Cheltenham,England</div>
+            </div>
+            <div class="num">15</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_moussasissoko.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Moussa Sissoko
+              <div class="born">Le Blanc-Mensnil,France</div>
+            </div>
+            <div class="num">17</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_giovanilocelso.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Ginovani Lo Celso
+              <div class="born">Rosario,Argentina</div>
+            </div>
+            <div class="num">18</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_ryansessegnon.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Ryan Sessegnon
+              <div class="born">Roehmptom,London</div>
+            </div>
+            <div class="num">19</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="pho">
+            <a href="#"><img src="imgs/firstteam_delealli.png" /></a>
+          </div>
+          <div class="text">
+            <div class="name">
+              Dele Alli
+              <div class="born">Milton Keynes,England</div>
+            </div>
+            <div class="num">20</div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer>
       <span>All right not reserved by KH</span>
     </footer>
   </body>
+  <script src="js/pageScrl.js"></script>
   <script src="js/userIcon.js"></script>
 </html>
