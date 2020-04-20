@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .mainContent {
+        overflow: hidden;
+        width: 100%;
+      }
+      .ticketMenu {
+        width: 100%;
+        height: 50px;
+        background-color: #111836d0;
+      }
+      .ticketMenu > div {
+        width: 1208px;
+        height: 100%;
+        background-color: #111836d0;
+        margin-left: 15%;
+      }
+      .ticketMenu > div > ul > li {
+        text-align: center;
+        float: left;
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        border-top: 2px solid #111836d0;
+      }
+      .ticketMenu > div > ul > li:nth-of-type(2) {
+        border-top: 2px solid #c6f43e;
+      }
+      .ticketMenu > div > ul > li:hover {
+        border-top: 2px solid #c6f43e;
+      }
+      .ticketMenu > div > ul > li > a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+      }
+      .ticketMenu > div > ul > li:nth-of-type(2) a {
+        color: #c6f43e;
+      }
+      .ticketMenu > div > ul > li > a:hover {
+        color: #c6f43e;
+      }
+      .divImgBackground {
+        background-color: white;
+        opacity: 0.3;
+        position: absolute;
+        height: 900px;
+        width: 100%;
+        overflow: hidden;
+      }
+      .divImgBackground2 {
+        background-image: url(imgs/tottenham1.jpg);
+        background-repeat: no-repeat;
+        background-size: 1920px;
+        width: 100%;
+        height: 1000px;
+        z-index: 10;
+      }
+      .divImgBackground + div {
+        width: 820px;
+        height: 50px;
+        background-color: #111836d0;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+        margin-top: 100px;
+        margin-left: 500px;
+        z-index: 10;
+      }
+      table,
+      tr,
+      td {
+        text-align: center;
+      }
+      td {
+        width: 10px;
+        height: 10px;
+      }
+      input + label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #6c6c6c;
+        cursor: pointer;
+        margin: 1px;
+        background-color: white;
+      }
+      input:checked + label {
+        background-color: #c6f43e;
+        margin: 1px;
+      }
+      input {
+        display: none;
+      }
+      #sit {
+        margin-top: 100px;
+        margin-left: 510px;
+        margin-bottom: 363px;
+        position: relative;
+      }
+      .mainContent + div {
+        width: 130px;
+        height: 200px;
+        border: 3px solid #6c6c6c;
+        margin-left: 1400px;
+        margin-top: 120px;
+        position: absolute;
+      }
+      .sitNumTitle {
+        width: 100%;
+        height: 15%;
+        background-color: #111836d0;
+        text-align: center;
+        line-height: 25px;
+        color: white;
+        font-weight: 900;
+      }
+      #sitNum {
+        padding: 4px;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      .selbtn {
+        width: 130px;
+        height: 50px;
+        border: 3px solid #6c6c6c;
+        margin-left: 1400px;
+        margin-top: 350px;
+        position: absolute;
+        background-color: #a8a8a8;
+      }
+      .selbtn > a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 45px;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html">
+          <div class="logo_wrapper">
+            <div class="menu_logo"></div>
+            <div><span>Tottenham</span><span>HotSpur</span></div>
+          </div>
+        </a>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
+        <span><a href="teams.html">CLUB</a></span>
+        <span><a href="ticket.html">TICKETS</a></span>
+        <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
+        <span><a href="dk_tottenham3.html">VOTE</a></span>
+        <span><a href="dk_tottenham1.html">LIVE</a></span>
+        <span><a href="news.html">NEWS</a></span>
+        <span><a href="goods_main_clothes.html">SHOP</a></span>
+        <div class="icon-scroll">
+          <div class="i_scroll_before"></div>
+          <div class="i_scroll_after"></div>
+        </div>
+        <span class="dh-user"
+          ><i class="far fa-user"></i>
+          <div class="dh-myinfo">
+            <a href="Tottenham_insertMem.html">회원가입</a>
+            <a href="login.html">로그인</a>
+          </div>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainContent">
+        <div class="ticketMenu">
+          <div>
+            <ul>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="ticket.html">Buy Tickets</a></li>
+              <li><a href="#">Premium Experiences</a></li>
+              <li><a href="#">Accommodation</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="divImgBackground">
+          <div class="divImgBackground2"></div>
+        </div>
+        <div>좌석 선택</div>
+      </div>
+      <div>
+        <div class="sitNumTitle">선택한 좌석</div>
+        <div id="sitNum"></div>
+      </div>
+      <div class="selbtn"><a href="#">예매하기</a></div>
+    </main>
+    <script>
+      document.write("<table id='sit'>");
+      for (var f = 0; f < 20; f++) {
+        document.write("<tr>");
+        for (var i = 1; i <= 50; i++) {
+          document.write("<td>");
+          document.write(
+            "<input type='checkbox' id='sn" +
+              f +
+              i +
+              "' name='checkSit' value='" +
+              f +
+              i +
+              "' onclick='sitClick();'>"
+          );
+          document.write("<label for='sn" + f + i + "'>");
+          document.write("</label>");
+          document.write("</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+
+      for (var b = 0; b < 3; b++) {
+        for (var a = 1; a <= 50; a++) {
+          $("#sn" + b + a).attr("disabled", true);
+          $("#sn" + b + a)
+            .next()
+            .css("background-color", "black");
+        }
+      }
+      $("#sn4" + 2).attr("disabled", true);
+      $("#sn4" + 2)
+        .next()
+        .css("background-color", "black");
+      $("#sn4" + 5).attr("disabled", true);
+      $("#sn4" + 5)
+        .next()
+        .css("background-color", "black");
+      $("#sn3" + 29).attr("disabled", true);
+      $("#sn3" + 29)
+        .next()
+        .css("background-color", "black");
+      $("#sn5" + 49).attr("disabled", true);
+      $("#sn5" + 49)
+        .next()
+        .css("background-color", "black");
+
+      function sitClick() {
+        var sitNum = document.getElementById("sitNum");
+        var chks = document.getElementsByName("checkSit");
+        sitNum.innerHTML = "";
+        for (var i = 0; i < chks.length; i++) {
+          if (chks[i].checked) {
+            if (i < 50) {
+              sitNum.innerHTML += "a열 " + (i + 1) + "번" + "<br>";
+            } else {
+              var elseval = parseInt(i / 50);
+              var elseval2 = parseInt(i % 50);
+              switch (elseval) {
+                case 1:
+                  sitNum.innerHTML += "b열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 2:
+                  sitNum.innerHTML += "c열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 3:
+                  sitNum.innerHTML += "d열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 4:
+                  sitNum.innerHTML += "e열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 5:
+                  sitNum.innerHTML += "f열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 6:
+                  sitNum.innerHTML += "g열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 7:
+                  sitNum.innerHTML += "h열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 8:
+                  sitNum.innerHTML += "i열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 9:
+                  sitNum.innerHTML += "j열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 10:
+                  sitNum.innerHTML += "k열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 11:
+                  sitNum.innerHTML += "l열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 12:
+                  sitNum.innerHTML += "m열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 13:
+                  sitNum.innerHTML += "n열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 14:
+                  sitNum.innerHTML += "o열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 15:
+                  sitNum.innerHTML += "p열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 16:
+                  sitNum.innerHTML += "q열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 17:
+                  sitNum.innerHTML += "r열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 18:
+                  sitNum.innerHTML += "s열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+                case 19:
+                  sitNum.innerHTML += "t열 " + (elseval2 + 1) + "번" + "<br>";
+                  break;
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+  </body>
+  <script src="js/userIcon.js"></script>
+</html>
