@@ -1,178 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/8bd2671777.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <title>Insert title here</title>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.3.1.js"
-    ></script>
-    <style>
-      body {
-        width: 1920px;
-      }
 
-      .content {
-        margin: 0 auto;
-        width: 70%;
-        border: 1px solid black;
-        overflow: hidden;
-      }
+<head>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="https://kit.fontawesome.com/8bd2671777.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		body {
+            overflow-x: hidden;
+			width: 1920px;
+		}
 
-      .navi {
-        width: 100%;
-        overflow: hidden;
-        background-color: #16274b;
-      }
+		.content {
+			margin: 0 auto;
+			width: 70%;
+			border: 1px solid black;
+			overflow: hidden;
 
-      .navi > ul {
-        margin: 0 auto;
-        margin-left: 65px;
-        width: 100%;
-        list-style: none;
-      }
+		}
 
-      .navi > ul > li > a {
-        border-top: 1px solid #16274b;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 45px;
-        font-weight: 500;
-        color: white;
-        font-size: 25px;
-        float: left;
-        width: 20%;
-        height: 50px;
-        background-color: #16274b;
-        text-decoration: none;
-      }
+		.navi {
+			width: 100%;
+			overflow: hidden;
+			background-color: #16274B;
 
-      .navi li > a:hover {
-        color: #c6f43e;
-        border-top: 1px solid #c6f43e;
-      }
 
-      .video1 {
-        width: 100%;
-        height: 500px;
-        background-image: url(imgs/hugo-save.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 40% 20%;
-        position: relative;
-      }
+		}
 
-      .bgimg {
-        width: 100%;
-        height: 500px;
-        background-color: #16274b;
-        opacity: 0.8;
-        overflow: hidden;
-      }
+		.navi>ul {
+			margin: 0 auto;
+			margin-left: 65px;
+			width: 100%;
+			list-style: none;
 
-      .im > img {
-        width: 400px;
-        top: 52px;
-        left: 140px;
-        position: absolute;
-      }
+		}
 
-      .text {
-        width: 300px;
-        height: 150px;
-        top: 170px;
-        left: 750px;
-        position: absolute;
-      }
+		.navi>ul>li>a {
+			border-top: 1px solid #16274B;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 45px;
+			font-weight: 500;
+			color: white;
+			font-size: 25px;
+			float: left;
+			width: 20%;
+			height: 50px;
+			background-color: #16274B;
+			text-decoration: none;
+		}
 
-      .name {
-        text-align: left;
-        box-sizing: border-box;
-        width: 70%;
-        color: white;
-        height: auto;
-        float: left;
-        font-size: 35px;
-      }
+		.navi li>a:hover {
+			color: #C6F43E;
+			border-top: 1px solid #C6F43E;
 
-      .num {
-        margin-left: -70px;
-        box-sizing: border-box;
-        width: 30%;
-        height: 100px;
-        float: left;
-        color: white;
-        text-align: center;
-        line-height: 80px;
-        font-size: 70px;
-        overflow: hidden;
-      }
+		}
 
-      .born {
-        border-top: 2px solid #4db1e6;
+		.video1 {
 
-        box-sizing: border-box;
-        width: 100%;
-        text-align: left;
-        font-size: 15px;
-        height: 30px;
-        margin-top: 15px;
-      }
-      .tt > #nn {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
-      .tt > #text {
-        margin-top: 0px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
+			width: 100%;
+			height: 500px;
+			background-image: url(imgs/hugo-save.gif);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 40% 20%;
+			position: relative;
 
-        padding: 10px;
 
-        white-space: pre-line;
-      }
+		}
 
-      #n2 {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
+		.bgimg {
+			width: 100%;
+			height: 500px;
+			background-color: #16274B;
+			opacity: 0.8;
+			overflow: hidden;
 
-      .news {
-        margin-top: 20px;
-        margin-left: 300px;
-        margin-right: 150px;
-        margin-bottom: 450px;
-      }
-      .nImg {
-        float: left;
-      }
-    </style>
-    <script>
-      $(function () {
-        $("#nn").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#nn").children().last().css("font-size", "40px");
-        $("#nn").children().last().css("color", "#383639");
+		}
 
-        $("#n2").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#n2").children().last().css("font-size", "40px");
-        $("#n2").children().last().css("color", "#383639");
-      });
-    </script>
-  </head>
+		.im>img {
+			width: 400px;
+			top: 52px;
+			left: 140px;
+			position: absolute;
 
-  <body>
+		}
+
+		.text {
+
+			
+			width: 300px;
+			height: 150px;
+			top: 170px;
+			left: 750px;
+			position: absolute;
+
+
+		}
+
+		.name {
+			
+			text-align: left;
+			box-sizing: border-box;
+			width: 70%;
+			color: white;
+			height: auto;
+			float: left;
+			font-size: 35px;
+
+		}
+
+		.num {
+			margin-left: -70px;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100px;
+			float: left;
+			color: white;
+			text-align: center;
+			line-height: 80px;
+			font-size: 70px;
+			overflow: hidden;
+		}
+
+		.born {
+			border-top: 2px solid #4DB1E6;
+
+			box-sizing: border-box;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			height: 30px;
+			margin-top: 15px;
+		}
+		.tt>#nn{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		.tt>#text{
+			margin-top: 0px;
+			margin-left: 150px;
+			margin-right: 150px;
+			margin-bottom: 50px;
+			
+			padding: 10px;
+			
+			white-space: pre-line;
+			
+		}
+		
+		#n2{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		
+		.news{
+			margin-top: 20px;
+			margin-left: 300px;
+			margin-right: 150px;
+			margin-bottom: 450px;
+		}
+		.nImg{
+			
+			float: left;
+			
+		}
+	</style>
+	<script>
+		$(function(){
+			$("#nn").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#nn").children().last().css("font-size","40px");
+			$("#nn").children().last().css("color","#383639");
+			
+			$("#n2").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#n2").children().last().css("font-size","40px");
+			$("#n2").children().last().css("color","#383639");
+			
+		});
+	</script>
+
+</head>
+
+<body>
     <header>
       <div class="menu">
         <a href="index.html">
@@ -203,118 +222,54 @@
       </div>
     </header>
     <main>
-      <div class="content">
-        <div class="navi">
-          <ul>
-            <li><a href="Tottenham_player1.html">Player</a></li>
-            <li><a href="#">Coaching Staff</a></li>
-            <li><a href="Tottenham_Lt.html">League Table</a></li>
-            <li><a href="Tottenham_Stat.html">Stats</a></li>
-          </ul>
-        </div>
-        <div class="video1">
-          <div class="bgimg"></div>
-          <div class="im"><img src="imgs/firstteam_hugolloris.png" /></div>
-          <div class="text">
-            <div class="name">
-              Hugo<br /><strong>LLORIS</strong>
-              <div class="born"><strong>Born</strong>: 26 December 1986</div>
-            </div>
-            <div class="num">1</div>
-          </div>
-        </div>
-        <div class="tt">
-          <div id="nn"><span>Hu</span><span>go Lloris</span></div>
-          <div id="text">
-            <p>
-              A quietly-spoken yet authoritative figure, Hugo Lloris is a
-              tremendous servant to us and the France national team as
-              goalkeeper and captain. He began the 2018/19 season - his seventh
-              at the Club - as a World Cup winner with his country, becoming the
-              first Spurs player ever to win the famous trophy when he lifted it
-              on behalf of Les Bleus in Russia that summer, and ended it as a
-              Champions League finalist, playing 11 times during our epic run to
-              the showpiece fixture in Madrid. <br />
-              In addition to some excellent stops in open play, Hugo chipped in
-              with three crucial penalty saves in the second half of that
-              campaign, which helped us secure a top four spot and Champions
-              League qualification for the 2019/20 season. Two of those came in
-              consecutive Premier League home games against Leicester City and
-              Arsenal, with the third coming against Manchester City in Europe
-              to help us edge through our quarter-final tie on away goals. In
-              all, Hugo made 44 starts for us during that season across the
-              Premier League and Champions League. The goalkeeper began his
-              senior playing career with hometown club Nice in 2005, where he
-              made 72 appearances before departing for French champions
-              Olympique Lyonnais. There he clocked up 146 league appearances,
-              twice winning the Ligue 1 Goalkeeper of the Year award. After
-              joining us in August, 2012, he made his Spurs debut and kept a
-              clean sheet in a goalless draw against Lazio in the Europa League
-              in September, 2012, before making his Premier League bow against
-              Aston Villa that October. He went on to establish himself as
-              number one in a fine first season at the Lane, eventually starting
-              27 times in the Premier League in a total of 33 appearances in
-              2012/13. He enjoyed an outstanding 2013/14 campaign where he
-              featured 45 times for us in all competitions, including playing in
-              37 of our 38 matches in the Premier League. Regarded as one of the
-              best goalkeepers in the world, he was named vice-captain at the
-              start of the 2014/15 season and went on to skipper the team for
-              most of that Premier League campaign, proudly leading us out for
-              the 2015 Capital One Cup Final at Wembley. That season saw him
-              play in 44 of our 57 matches in all competitions. A knee injury
-              suffered early against Leicester City on March 21, 2015, ended a
-              sequence of 57 consecutive starts in the Premier League. Indeed,
-              Hugo started 93 of 95 Premier League matches for us between
-              November, 2013, and March, 2015. Assuming the captaincy on a
-              permanent basis in 2015/16, he missed the first game of that
-              season at Manchester United after picking up a wrist injury over
-              the summer but was back in time for the second game at home to
-              Stoke and in total he made 46 appearances throughout the campaign.
-              His 2016/17 season, his fifth at Spurs, got off to a frustrating
-              start as a hamstring injury forced him off in the first half of
-              our opening-day draw at Everton, but he returned to make 34 league
-              starts and keep 15 clean sheets - only missing out on a share of
-              the Premier League's Golden Gloves award by one shutout. He also
-              started all six of our games as we returned to Champions League
-              action and ended the campaign with 43 appearances in all
-              competitions. He started 36 of our 38 Premier League games in
-              2017/18, playing a further seven times in the UEFA Champions
-              League as we enjoyed some terrific results and performances
-              against Borussia Dortmund and eventual winners Real Madrid. He
-              also surpassed the 200 game mark in the Premier League and made
-              his 250th appearance for Spurs during the closing weeks of that
-              campaign. A French international, Hugo played at the 2010 FIFA
-              World Cup in South Africa and captained his country for the first
-              time in November, 2010, against England at Wembley. He now
-              regularly wears the armband, leading Les Bleus out at Euro 2012,
-              the 2014 FIFA World Cup, at Euro 2016, where they suffered defeat
-              at the hands of Portugal in the final on home soil, and the 2018
-              FIFA World Cup in Russia, where France won the competition for the
-              first time since 1998.
-            </p>
-          </div>
-          <div id="n2"><span>La</span><span>test Hugo Lloris news</span></div>
-          <div class="news">
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/march/burnley-v-spurs-team-news/"
-                ><img src="imgs/llorisnew1.PNG"
-              /></a>
-            </div>
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/february/spurs-tv-special-hugos-best-saves-in-the-premier-league/"
-                ><img src="imgs/llorisnews2.PNG"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <span>All right not reserved by KH</span>
-    </footer>
-  </body>
+	<div class="content">
+		<div class="navi">
+			<ul>
+				<li><a href="Tottenham_player1.html">Player</a></li>
+				<li><a href="#">Coaching Staff</a></li>
+				<li><a href="Tottenham_Lt.html">League Table</a></li>
+				<li><a href="Tottenham_Stat.html">Stats</a></li>
+			</ul>
+		</div>
+		<div class="video1">
+			<div class="bgimg"></div>
+			<div class="im"><img src="imgs/firstteam_hugolloris.png"></div>
+			<div class="text">
+				<div class="name">Hugo<br><strong>LLORIS</strong>
+					<div class="born"><strong>Born</strong>: 26 December 1986</div>
+				</div>
+				<div class="num">1</div>
+			</div>
+		</div>
+		<div class="tt">
+			<div id="nn"><span>Hu</span><span>go Lloris</span></div>
+			<div id="text">
+				<p> A quietly-spoken yet authoritative figure, Hugo Lloris is a tremendous servant to us and the France national team as goalkeeper and captain.
+				He began the 2018/19 season - his seventh at the Club - as a World Cup winner with his country, becoming the first Spurs player ever to win the famous trophy when he lifted it on behalf of Les Bleus in Russia that summer, and ended it as a Champions League finalist, playing 11 times during our epic run to the showpiece fixture in Madrid.<br>
+				In addition to some excellent stops in open play, Hugo chipped in with three crucial penalty saves in the second half of that campaign, which helped us secure a top four spot and Champions League qualification for the 2019/20 season. Two of those came in consecutive Premier League home games against Leicester City and Arsenal, with the third coming against Manchester City in Europe to help us edge through our quarter-final tie on away goals. In all, Hugo made 44 starts for us during that season across the Premier League and Champions League.
+
+				The goalkeeper began his senior playing career with hometown club Nice in 2005, where he made 72 appearances before departing for French champions Olympique Lyonnais. There he clocked up 146 league appearances, twice winning the Ligue 1 Goalkeeper of the Year award.
+				After joining us in August, 2012, he made his Spurs debut and kept a clean sheet in a goalless draw against Lazio in the Europa League in September, 2012, before making his Premier League bow against Aston Villa that October. He went on to establish himself as number one in a fine first season at the Lane, eventually starting 27 times in the Premier League in a total of 33 appearances in 2012/13.
+				He enjoyed an outstanding 2013/14 campaign where he featured 45 times for us in all competitions, including playing in 37 of our 38 matches in the Premier League. Regarded as one of the best goalkeepers in the world, he was named vice-captain at the start of the 2014/15 season and went on to skipper the team for most of that Premier League campaign, proudly leading us out for the 2015 Capital One Cup Final at Wembley. That season saw him play in 44 of our 57 matches in all competitions. A knee injury suffered early against Leicester City on March 21, 2015, ended a sequence of 57 consecutive starts in the Premier League. Indeed, Hugo started 93 of 95 Premier League matches for us between November, 2013, and March, 2015.
+				Assuming the captaincy on a permanent basis in 2015/16, he missed the first game of that season at Manchester United after picking up a wrist injury over the summer but was back in time for the second game at home to Stoke and in total he made 46 appearances throughout the campaign.
+
+				His 2016/17 season, his fifth at Spurs, got off to a frustrating start as a hamstring injury forced him off in the first half of our opening-day draw at Everton, but he returned to make 34 league starts and keep 15 clean sheets - only missing out on a share of the Premier League's Golden Gloves award by one shutout. He also started all six of our games as we returned to Champions League action and ended the campaign with 43 appearances in all competitions.
+				He started 36 of our 38 Premier League games in 2017/18, playing a further seven times in the UEFA Champions League as we enjoyed some terrific results and performances against Borussia Dortmund and eventual winners Real Madrid. He also surpassed the 200 game mark in the Premier League and made his 250th appearance for Spurs during the closing weeks of that campaign.
+				A French international, Hugo played at the 2010 FIFA World Cup in South Africa and captained his country for the first time in November, 2010, against England at Wembley. He now regularly wears the armband, leading Les Bleus out at Euro 2012, the 2014 FIFA World Cup, at Euro 2016, where they suffered defeat at the hands of Portugal in the final on home soil, and the 2018 FIFA World Cup in Russia, where France won the competition for the first time since 1998.</p>
+			</div>
+			<div id="n2"><span>La</span><span>test Hugo Lloris news</span></div>
+			<div class="news">
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/march/burnley-v-spurs-team-news/"><img src="imgs/llorisnew1.PNG"></a></div>
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/february/spurs-tv-special-hugos-best-saves-in-the-premier-league/"><img src="imgs/llorisnews2.PNG"></a></div>
+			</div>
+			
+		</div>
+	</div>
+        </main>
+	<footer>
+		<span>All right not reserved by KH</span>
+	</footer>
+    
   <script src="js/userIcon.js"></script>
   <script src="js/pageScrl.js"></script>
-</html>
+</body></html>

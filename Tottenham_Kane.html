@@ -1,178 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/8bd2671777.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <title>Insert title here</title>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.3.1.js"
-    ></script>
-    <style>
-      body {
-        width: 1920px;
-      }
 
-      .content {
-        margin: 0 auto;
-        width: 70%;
-        border: 1px solid black;
-        overflow: hidden;
-      }
+<head>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="https://kit.fontawesome.com/8bd2671777.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		body {
+            overflow-x: hidden;
+			width: 1920px;
+		}
 
-      .navi {
-        width: 100%;
-        overflow: hidden;
-        background-color: #16274b;
-      }
+		.content {
+			margin: 0 auto;
+			width: 70%;
+			border: 1px solid black;
+			overflow: hidden;
 
-      .navi > ul {
-        margin: 0 auto;
-        margin-left: 65px;
-        width: 100%;
-        list-style: none;
-      }
+		}
 
-      .navi > ul > li > a {
-        border-top: 1px solid #16274b;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 45px;
-        font-weight: 500;
-        color: white;
-        font-size: 25px;
-        float: left;
-        width: 20%;
-        height: 50px;
-        background-color: #16274b;
-        text-decoration: none;
-      }
+		.navi {
+			width: 100%;
+			overflow: hidden;
+			background-color: #16274B;
 
-      .navi li > a:hover {
-        color: #c6f43e;
-        border-top: 1px solid #c6f43e;
-      }
 
-      .video1 {
-        width: 100%;
-        height: 500px;
-        background-image: url(imgs/kane-gif.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 40% 20%;
-        position: relative;
-      }
+		}
 
-      .bgimg {
-        width: 100%;
-        height: 500px;
-        background-color: #16274b;
-        opacity: 0.8;
-        overflow: hidden;
-      }
+		.navi>ul {
+			margin: 0 auto;
+			margin-left: 65px;
+			width: 100%;
+			list-style: none;
 
-      .im > img {
-        width: 400px;
-        top: 52px;
-        left: 140px;
-        position: absolute;
-      }
+		}
 
-      .text {
-        width: 300px;
-        height: 150px;
-        top: 170px;
-        left: 750px;
-        position: absolute;
-      }
+		.navi>ul>li>a {
+			border-top: 1px solid #16274B;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 45px;
+			font-weight: 500;
+			color: white;
+			font-size: 25px;
+			float: left;
+			width: 20%;
+			height: 50px;
+			background-color: #16274B;
+			text-decoration: none;
+		}
 
-      .name {
-        text-align: left;
-        box-sizing: border-box;
-        width: 70%;
-        color: white;
-        height: auto;
-        float: left;
-        font-size: 35px;
-      }
+		.navi li>a:hover {
+			color: #C6F43E;
+			border-top: 1px solid #C6F43E;
 
-      .num {
-        margin-left: -70px;
-        box-sizing: border-box;
-        width: 30%;
-        height: 100px;
-        float: left;
-        color: white;
-        text-align: center;
-        line-height: 80px;
-        font-size: 70px;
-        overflow: hidden;
-      }
+		}
 
-      .born {
-        border-top: 2px solid #4db1e6;
+		.video1 {
 
-        box-sizing: border-box;
-        width: 100%;
-        text-align: left;
-        font-size: 15px;
-        height: 30px;
-        margin-top: 15px;
-      }
-      .tt > #nn {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
-      .tt > #text {
-        margin-top: 0px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
+			width: 100%;
+			height: 500px;
+			background-image: url(imgs/kane-gif.gif);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 40% 20%;
+			position: relative;
 
-        padding: 10px;
 
-        white-space: pre-line;
-      }
+		}
 
-      #n2 {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
+		.bgimg {
+			width: 100%;
+			height: 500px;
+			background-color: #16274B;
+			opacity: 0.8;
+			overflow: hidden;
 
-      .news {
-        margin-top: 20px;
-        margin-left: 300px;
-        margin-right: 150px;
-        margin-bottom: 450px;
-      }
-      .nImg {
-        float: left;
-      }
-    </style>
-    <script>
-      $(function () {
-        $("#nn").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#nn").children().last().css("font-size", "40px");
-        $("#nn").children().last().css("color", "#383639");
+		}
 
-        $("#n2").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#n2").children().last().css("font-size", "40px");
-        $("#n2").children().last().css("color", "#383639");
-      });
-    </script>
-  </head>
+		.im>img {
+			width: 400px;
+			top: 52px;
+			left: 140px;
+			position: absolute;
 
-  <body>
+		}
+
+		.text {
+
+			
+			width: 300px;
+			height: 150px;
+			top: 170px;
+			left: 750px;
+			position: absolute;
+
+
+		}
+
+		.name {
+			
+			text-align: left;
+			box-sizing: border-box;
+			width: 70%;
+			color: white;
+			height: auto;
+			float: left;
+			font-size: 35px;
+
+		}
+
+		.num {
+			margin-left: -70px;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100px;
+			float: left;
+			color: white;
+			text-align: center;
+			line-height: 80px;
+			font-size: 70px;
+			overflow: hidden;
+		}
+
+		.born {
+			border-top: 2px solid #4DB1E6;
+
+			box-sizing: border-box;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			height: 30px;
+			margin-top: 15px;
+		}
+		.tt>#nn{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		.tt>#text{
+			margin-top: 0px;
+			margin-left: 150px;
+			margin-right: 150px;
+			margin-bottom: 50px;
+			
+			padding: 10px;
+			
+			white-space: pre-line;
+			
+		}
+		
+		#n2{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		
+		.news{
+			margin-top: 20px;
+			margin-left: 300px;
+			margin-right: 150px;
+			margin-bottom: 450px;
+		}
+		.nImg{
+			
+			float: left;
+			
+		}
+	</style>
+	<script>
+		$(function(){
+			$("#nn").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#nn").children().last().css("font-size","40px");
+			$("#nn").children().last().css("color","#383639");
+			
+			$("#n2").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#n2").children().last().css("font-size","40px");
+			$("#n2").children().last().css("color","#383639");
+			
+		});
+	</script>
+
+</head>
+
+<body>
     <header>
       <div class="menu">
         <a href="index.html">
@@ -203,169 +222,62 @@
       </div>
     </header>
     <main>
-      <div class="content">
-        <div class="navi">
-          <ul>
-            <li><a href="Tottenham_player1.html">Player</a></li>
-            <li><a href="#">Coaching Staff</a></li>
-            <li><a href="Tottenham_Lt.html">League Table</a></li>
-            <li><a href="Tottenham_Stat.html">Stats</a></li>
-          </ul>
-        </div>
-        <div class="video1">
-          <div class="bgimg"></div>
-          <div class="im"><img src="imgs/firstteam_harrykane.png" /></div>
-          <div class="text">
-            <div class="name">
-              Harry<br /><strong>KANE</strong>
-              <div class="born"><strong>Born</strong>: 28 July 1993</div>
-            </div>
-            <div class="num">10</div>
-          </div>
-        </div>
-        <div class="tt">
-          <div id="nn"><span>Ha</span><span>rry Kane</span></div>
-          <div id="text">
-            <p>
-              One of our own, Harry Kane has risen from our Academy to establish
-              himself as one of the best strikers around. The striker scored 17
-              goals in 28 Premier League appearances during 2018/19, despite two
-              separate ankle injuries in early 2019. One of those occurred in
-              the first leg of our Champions League quarter-final epic against
-              Manchester City at the new stadium in April, 2019, but he returned
-              in time to start the final against Liverpool in Madrid in June. In
-              all, Harry scored 24 goals in 40 appearances during that season.
-              In November, 2019, he scored twice in a 4-2 home win over
-              Olympiacos in the Champions League, becoming the quickest player
-              to reach the 20-goal mark in the competition's history, a record
-              previously held by Alessandro Del Piero. Born in Walthamstow,
-              Harry joined our Academy in July, 2009, and signed professional
-              forms a year later. He joined Leyton Orient on loan in January,
-              2011, where he made his Football League debut and scored five
-              goals in 18 games. The following season, 2011/12, saw his initial
-              emergence at Spurs with a debut against Hearts and six appearances
-              in the Europa League, including his first goal in a victory at
-              Shamrock Rovers. He then joined Millwall on loan in January, 2012,
-              and scored nine goals in 27 games for the Lions. He made his
-              Premier League debut for us on the opening day of 2012/13, taking
-              his tally to eight appearances, before joining Norwich City on
-              loan, but a serious ankle injury restricted him to four games at
-              Carrow Road. On his return to fitness, Harry joined Leicester City
-              and helped them reach the Championship play-offs, where they lost
-              over two legs to Watford. He made 13 appearances for the Foxes,
-              scoring twice. Harry was back in the fold for us in 2013/14 and
-              made 19 appearances in all competitions. He was handed his first
-              Premier League start in our colours against Sunderland in April,
-              2014, and responded with a first top flight goal - the first of
-              three in as many games. It was in 2014/15, however, that he really
-              shot to fame. In the opening months of the season, Harry had
-              scored eight goals in cup competitions including his first senior
-              hat-trick against Asteras Tripolis - a game that also saw him have
-              a brief stint in goal - before grabbing his first Premier League
-              goal of the season in the form of a last-minute free-kick to take
-              maximum points at Aston Villa on November 2, 2014. That earned him
-              a first Spurs start in the Premier League against Stoke City on
-              November 9, and he didn't look back, going on to score 31 goals in
-              51 appearances in all competitions, thus becoming the first Spur
-              to break the 30-goal barrier since Gary Lineker in 1991/92. He hit
-              21 goals in 34 Premier League outings - matching the totals of
-              Gareth Bale (2012-13) and Teddy Sheringham (1992/93) - and became
-              the first home-grown player to bag 20 league goals in a season
-              since Mark Falco in 1984/85. There were some magic moments along
-              the way, too. He grabbed two goals in our spectacular 5-3 home win
-              over eventual champions Chelsea on New Year's Day - the second
-              goal voted Goal of the Month on Match of the Day - and topped that
-              with both goals in a 2-1 home win against Arsenal in February,
-              2015, in what was his first start in the North London derby. He
-              won back-to-back Premier League Player of the Month awards in
-              January and February and followed that up with his first Premier
-              League hat-trick against Leicester City in March, 2015. A few days
-              later, he marked his first senior England cap with a goal just 79
-              seconds after coming off the bench! His close-range header against
-              Lithuania saw him score the third-fastest goal ever by an England
-              debutant - a record still held by the great Bill Nicholson - and
-              he went on to earn his first senior start for the Three Lions in
-              Italy soon afterwards. As a result of his tremendous campaign, he
-              earned the PFA Young Player of the Year award and a place in the
-              PFA Premier League Team of the Year, also sweeping the board in
-              terms of our club awards by being crowned Supporters' Clubs', One
-              Hotspur Members' and One Hotspur Juniors' Player of the Year.
-              After a slow start to the 2015/16 campaign, he got off the mark in
-              a 4-1 home win over Manchester City in September, 2015, and went
-              on to net 28 goals in 50 appearances in all competitions including
-              a league-best 25 strikes on the domestic scene. In doing so, he
-              became only the second Spur behind Teddy Sheringham in 1992/93 to
-              win the Premier League’s Golden Boot and set a new Club record for
-              goals in a Premier League season. He was also named Premier League
-              Player of the Month for March, 2016, and earned a spot in the PFA
-              Premier League Team of the Year. Harry picked up a second
-              consecutive Premier League Golden Boot in 2016/17 with 29 league
-              goals from 30 top flight appearances, in spite of missing a
-              combined total of 11 weeks of the season after picking up ankle
-              injuries against Sunderland in September, 2016, and Millwall in
-              the FA Cup in March, 2017. He scored 35 goals in 38 games in all
-              competitions and completed his haul with a first ever four-goal
-              salvo in our 6-1 win at Leicester City on the penultimate matchday
-              of the season, before netting his fifth hat-trick of the campaign
-              in a 7-1 triumph at Hull City on the final day. His other trebles
-              came in 4-0 home wins over West Brom and Stoke City, plus a 3-0 FA
-              Cup victory at Fulham, while he made his Champions League debut
-              against Monaco in September, 2016, and scored his first goal in
-              the competition in the reverse fixture in November, 2016, before
-              adding to his tally in our 3-1 home win over CSKA Moscow at
-              Wembley. He earned his fourth EA SPORTS Player of the Month award
-              in February, 2017, was once again named in the PFA Premier League
-              Team of the Year and also picked up the PFA Fans’ Premier League
-              Player of the Season prize - decided by a public vote. He hit new
-              heights in terms of his goalscoring in 2017/18, reaching 30 goals
-              in the Premier League and 41 in all competitions, including
-              back-to-back hat-tricks at the end of 2017 against Burnley and
-              Southampton to break Alan Shearer's record for the most Premier
-              League goals scored in a calendar year with 39. Equalling the
-              record for the most Premier League Player of the Month awards in a
-              single season by claiming his fifth and sixth prizes in September
-              and December, 2017, he also began to work his way up the club's
-              top 10 goalscorers of all time list and on 13 January, 2018, he
-              became our record Premier League goalscorer, overtaking Teddy
-              Sheringham with his 98th in a 4-0 home win against Everton. He was
-              also named in the PFA Premier League Team of the Year for a fourth
-              year in a row. Capped earlier in his career by England at Under-17
-              and 19 levels, Harry was a member of the Young Lions' squad for
-              the 2013 FIFA Under-20 World Cup and played all three games in
-              Turkey. In June, 2015, he was part of the England Under-21s squad
-              for the European Under-21 Championship finals in the Czech
-              Republic and 12 months later he played for the Three Lions' senior
-              side at Euro 2016 in France. He captained his national team for
-              the first time in a World Cup qualifier away to Scotland in June,
-              2017, when he scored a stoppage-time equaliser in a 2-2 draw and
-              was subsequently appointed England captain for the 2018 FIFA World
-              Cup in Russia, where he claimed the tournament's Golden Boot with
-              six goals as the Three Lions heroically reached the semi-finals
-              before eventually finishing fourth.
-            </p>
-          </div>
-          <div id="n2"><span>La</span><span>test Harry Kane news</span></div>
-          <div class="news">
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/march/harry-at-a-good-stage-and-states-stay-safe/"
-                ><img src="imgs/KaneNew1.PNG"
-              /></a>
-            </div>
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/february/jose-positive-on-harry-s-progress/"
-                ><img src="imgs/kaneNew2.PNG"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <span>All right not reserved by KH</span>
-    </footer>
-  </body>
+	<div class="content">
+		<div class="navi">
+			<ul>
+				<li><a href="Tottenham_player1.html">Player</a></li>
+				<li><a href="#">Coaching Staff</a></li>
+				<li><a href="Tottenham_Lt.html">League Table</a></li>
+				<li><a href="Tottenham_Stat.html">Stats</a></li>
+			</ul>
+		</div>
+		<div class="video1">
+			<div class="bgimg"></div>
+			<div class="im"><img src="imgs/firstteam_harrykane.png"></div>
+			<div class="text">
+				<div class="name">Harry<br><strong>KANE</strong>
+					<div class="born"><strong>Born</strong>: 28 July 1993</div>
+				</div>
+				<div class="num">10</div>
+			</div>
+		</div>
+		<div class="tt">
+			<div id="nn"><span>Ha</span><span>rry Kane</span></div>
+			<div id="text">
+				<p>One of our own, Harry Kane has risen from our Academy to establish himself as one of the best strikers around.
+				The striker scored 17 goals in 28 Premier League appearances during 2018/19, despite two separate ankle injuries in early 2019. One of those occurred in the first leg of our Champions League quarter-final epic against Manchester City at the new stadium in April, 2019, but he returned in time to start the final against Liverpool in Madrid in June. In all, Harry scored 24 goals in 40 appearances during that season.
+				In November, 2019, he scored twice in a 4-2 home win over Olympiacos in the Champions League, becoming the quickest player to reach the 20-goal mark in the competition's history, a record previously held by Alessandro Del Piero.
+				Born in Walthamstow, Harry joined our Academy in July, 2009, and signed professional forms a year later. He joined Leyton Orient on loan in January, 2011, where he made his Football League debut and scored five goals in 18 games.
+				The following season, 2011/12, saw his initial emergence at Spurs with a debut against Hearts and six appearances in the Europa League, including his first goal in a victory at Shamrock Rovers. He then joined Millwall on loan in January, 2012, and scored nine goals in 27 games for the Lions.
+
+
+				He made his Premier League debut for us on the opening day of 2012/13, taking his tally to eight appearances, before joining Norwich City on loan, but a serious ankle injury restricted him to four games at Carrow Road. On his return to fitness, Harry joined Leicester City and helped them reach the Championship play-offs, where they lost over two legs to Watford. He made 13 appearances for the Foxes, scoring twice.
+				Harry was back in the fold for us in 2013/14 and made 19 appearances in all competitions. He was handed his first Premier League start in our colours against Sunderland in April, 2014, and responded with a first top flight goal - the first of three in as many games.
+				It was in 2014/15, however, that he really shot to fame. In the opening months of the season, Harry had scored eight goals in cup competitions including his first senior hat-trick against Asteras Tripolis - a game that also saw him have a brief stint in goal - before grabbing his first Premier League goal of the season in the form of a last-minute free-kick to take maximum points at Aston Villa on November 2, 2014. That earned him a first Spurs start in the Premier League against Stoke City on November 9, and he didn't look back, going on to score 31 goals in 51 appearances in all competitions, thus becoming the first Spur to break the 30-goal barrier since Gary Lineker in 1991/92. He hit 21 goals in 34 Premier League outings - matching the totals of Gareth Bale (2012-13) and Teddy Sheringham (1992/93) - and became the first home-grown player to bag 20 league goals in a season since Mark Falco in 1984/85.
+
+
+				There were some magic moments along the way, too. He grabbed two goals in our spectacular 5-3 home win over eventual champions Chelsea on New Year's Day - the second goal voted Goal of the Month on Match of the Day - and topped that with both goals in a 2-1 home win against Arsenal in February, 2015, in what was his first start in the North London derby.
+				He won back-to-back Premier League Player of the Month awards in January and February and followed that up with his first Premier League hat-trick against Leicester City in March, 2015. A few days later, he marked his first senior England cap with a goal just 79 seconds after coming off the bench! His close-range header against Lithuania saw him score the third-fastest goal ever by an England debutant - a record still held by the great Bill Nicholson - and he went on to earn his first senior start for the Three Lions in Italy soon afterwards. As a result of his tremendous campaign, he earned the PFA Young Player of the Year award and a place in the PFA Premier League Team of the Year, also sweeping the board in terms of our club awards by being crowned Supporters' Clubs', One Hotspur Members' and One Hotspur Juniors' Player of the Year.
+				After a slow start to the 2015/16 campaign, he got off the mark in a 4-1 home win over Manchester City in September, 2015, and went on to net 28 goals in 50 appearances in all competitions including a league-best 25 strikes on the domestic scene. In doing so, he became only the second Spur behind Teddy Sheringham in 1992/93 to win the Premier League’s Golden Boot and set a new Club record for goals in a Premier League season. He was also named Premier League Player of the Month for March, 2016, and earned a spot in the PFA Premier League Team of the Year.
+				Harry picked up a second consecutive Premier League Golden Boot in 2016/17 with 29 league goals from 30 top flight appearances, in spite of missing a combined total of 11 weeks of the season after picking up ankle injuries against Sunderland in September, 2016, and Millwall in the FA Cup in March, 2017. He scored 35 goals in 38 games in all competitions and completed his haul with a first ever four-goal salvo in our 6-1 win at Leicester City on the penultimate matchday of the season, before netting his fifth hat-trick of the campaign in a 7-1 triumph at Hull City on the final day. His other trebles came in 4-0 home wins over West Brom and Stoke City, plus a 3-0 FA Cup victory at Fulham, while he made his Champions League debut against Monaco in September, 2016, and scored his first goal in the competition in the reverse fixture in November, 2016, before adding to his tally in our 3-1 home win over CSKA Moscow at Wembley. He earned his fourth EA SPORTS Player of the Month award in February, 2017, was once again named in the PFA Premier League Team of the Year and also picked up the PFA Fans’ Premier League Player of the Season prize - decided by a public vote.
+
+
+				He hit new heights in terms of his goalscoring in 2017/18, reaching 30 goals in the Premier League and 41 in all competitions, including back-to-back hat-tricks at the end of 2017 against Burnley and Southampton to break Alan Shearer's record for the most Premier League goals scored in a calendar year with 39. Equalling the record for the most Premier League Player of the Month awards in a single season by claiming his fifth and sixth prizes in September and December, 2017, he also began to work his way up the club's top 10 goalscorers of all time list and on 13 January, 2018, he became our record Premier League goalscorer, overtaking Teddy Sheringham with his 98th in a 4-0 home win against Everton. He was also named in the PFA Premier League Team of the Year for a fourth year in a row.
+				Capped earlier in his career by England at Under-17 and 19 levels, Harry was a member of the Young Lions' squad for the 2013 FIFA Under-20 World Cup and played all three games in Turkey. In June, 2015, he was part of the England Under-21s squad for the European Under-21 Championship finals in the Czech Republic and 12 months later he played for the Three Lions' senior side at Euro 2016 in France. He captained his national team for the first time in a World Cup qualifier away to Scotland in June, 2017, when he scored a stoppage-time equaliser in a 2-2 draw and was subsequently appointed England captain for the 2018 FIFA World Cup in Russia, where he claimed the tournament's Golden Boot with six goals as the Three Lions heroically reached the semi-finals before eventually finishing fourth.</p>
+			</div>
+			<div id="n2"><span>La</span><span>test Harry Kane news</span></div>
+			<div class="news">
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/march/harry-at-a-good-stage-and-states-stay-safe/"><img src="imgs/KaneNew1.PNG"></a></div>
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/february/jose-positive-on-harry-s-progress/"><img src="imgs/kaneNew2.PNG"></a></div>
+			</div>
+			
+		</div>
+	</div>
+        </main>
+	<footer>
+		<span>All right not reserved by KH</span>
+	</footer>
+    
   <script src="js/userIcon.js"></script>
   <script src="js/pageScrl.js"></script>
-</html>
+</body></html>

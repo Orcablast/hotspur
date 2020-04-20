@@ -1,178 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/8bd2671777.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <title>Insert title here</title>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.3.1.js"
-    ></script>
-    <style>
-      body {
-        width: 1920px;
-      }
 
-      .content {
-        margin: 0 auto;
-        width: 70%;
-        border: 1px solid black;
-        overflow: hidden;
-      }
+<head>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="https://kit.fontawesome.com/8bd2671777.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		body {
+            overflow-x: hidden;
+			width: 1920px;
+		}
 
-      .navi {
-        width: 100%;
-        overflow: hidden;
-        background-color: #16274b;
-      }
+		.content {
+			margin: 0 auto;
+			width: 70%;
+			border: 1px solid black;
+			overflow: hidden;
 
-      .navi > ul {
-        margin: 0 auto;
-        margin-left: 65px;
-        width: 100%;
-        list-style: none;
-      }
+		}
 
-      .navi > ul > li > a {
-        border-top: 1px solid #16274b;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 45px;
-        font-weight: 500;
-        color: white;
-        font-size: 25px;
-        float: left;
-        width: 20%;
-        height: 50px;
-        background-color: #16274b;
-        text-decoration: none;
-      }
+		.navi {
+			width: 100%;
+			overflow: hidden;
+			background-color: #16274B;
 
-      .navi li > a:hover {
-        color: #c6f43e;
-        border-top: 1px solid #c6f43e;
-      }
 
-      .video1 {
-        width: 100%;
-        height: 500px;
-        background-image: url(imgs/son-gif.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 40% 20%;
-        position: relative;
-      }
+		}
 
-      .bgimg {
-        width: 100%;
-        height: 500px;
-        background-color: #16274b;
-        opacity: 0.8;
-        overflow: hidden;
-      }
+		.navi>ul {
+			margin: 0 auto;
+			margin-left: 65px;
+			width: 100%;
+			list-style: none;
 
-      .im > img {
-        width: 400px;
-        top: 52px;
-        left: 140px;
-        position: absolute;
-      }
+		}
 
-      .text {
-        width: 300px;
-        height: 150px;
-        top: 170px;
-        left: 750px;
-        position: absolute;
-      }
+		.navi>ul>li>a {
+			border-top: 1px solid #16274B;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 45px;
+			font-weight: 500;
+			color: white;
+			font-size: 25px;
+			float: left;
+			width: 20%;
+			height: 50px;
+			background-color: #16274B;
+			text-decoration: none;
+		}
 
-      .name {
-        text-align: left;
-        box-sizing: border-box;
-        width: 70%;
-        color: white;
-        height: auto;
-        float: left;
-        font-size: 35px;
-      }
+		.navi li>a:hover {
+			color: #C6F43E;
+			border-top: 1px solid #C6F43E;
 
-      .num {
-        margin-left: -50px;
-        box-sizing: border-box;
-        width: 30%;
-        height: 100px;
-        float: left;
-        color: white;
-        text-align: center;
-        line-height: 80px;
-        font-size: 70px;
-        overflow: hidden;
-      }
+		}
 
-      .born {
-        border-top: 2px solid #4db1e6;
+		.video1 {
 
-        box-sizing: border-box;
-        width: 100%;
-        text-align: left;
-        font-size: 15px;
-        height: 30px;
-        margin-top: 15px;
-      }
-      .tt > #nn {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
-      .tt > #text {
-        margin-top: 0px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
+			width: 100%;
+			height: 500px;
+			background-image: url(imgs/son-gif.gif);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 40% 20%;
+			position: relative;
 
-        padding: 10px;
 
-        white-space: pre-line;
-      }
+		}
 
-      #n2 {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
+		.bgimg {
+			width: 100%;
+			height: 500px;
+			background-color: #16274B;
+			opacity: 0.8;
+			overflow: hidden;
 
-      .news {
-        margin-top: 20px;
-        margin-left: 300px;
-        margin-right: 150px;
-        margin-bottom: 450px;
-      }
-      .nImg {
-        float: left;
-      }
-    </style>
-    <script>
-      $(function () {
-        $("#nn").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#nn").children().last().css("font-size", "40px");
-        $("#nn").children().last().css("color", "#383639");
+		}
 
-        $("#n2").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#n2").children().last().css("font-size", "40px");
-        $("#n2").children().last().css("color", "#383639");
-      });
-    </script>
-  </head>
+		.im>img {
+			width: 400px;
+			top: 52px;
+			left: 140px;
+			position: absolute;
 
-  <body>
+		}
+
+		.text {
+
+			
+			width: 300px;
+			height: 150px;
+			top: 170px;
+			left: 750px;
+			position: absolute;
+
+
+		}
+
+		.name {
+			
+			text-align: left;
+			box-sizing: border-box;
+			width: 70%;
+			color: white;
+			height: auto;
+			float: left;
+			font-size: 35px;
+
+		}
+
+		.num {
+			margin-left: -50px;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100px;
+			float: left;
+			color: white;
+			text-align: center;
+			line-height: 80px;
+			font-size: 70px;
+			overflow: hidden;
+		}
+
+		.born {
+			border-top: 2px solid #4DB1E6;
+
+			box-sizing: border-box;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			height: 30px;
+			margin-top: 15px;
+		}
+		.tt>#nn{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		.tt>#text{
+			margin-top: 0px;
+			margin-left: 150px;
+			margin-right: 150px;
+			margin-bottom: 50px;
+			
+			padding: 10px;
+			
+			white-space: pre-line;
+			
+		}
+		
+		#n2{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		
+		.news{
+			margin-top: 20px;
+			margin-left: 300px;
+			margin-right: 150px;
+			margin-bottom: 450px;
+		}
+		.nImg{
+			
+			float: left;
+			
+		}
+	</style>
+	<script>
+		$(function(){
+			$("#nn").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#nn").children().last().css("font-size","40px");
+			$("#nn").children().last().css("color","#383639");
+			
+			$("#n2").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#n2").children().last().css("font-size","40px");
+			$("#n2").children().last().css("color","#383639");
+			
+		});
+	</script>
+
+</head>
+
+<body>
     <header>
       <div class="menu">
         <a href="index.html">
@@ -203,124 +222,55 @@
       </div>
     </header>
     <main>
-      <div class="content">
-        <div class="navi">
-          <ul>
-            <li><a href="Tottenham_player1.html">Player</a></li>
-            <li><a href="#">Coaching Staff</a></li>
-            <li><a href="Tottenham_Lt.html">League Table</a></li>
-            <li><a href="Tottenham_Stat.html">Stats</a></li>
-          </ul>
-        </div>
-        <div class="video1">
-          <div class="bgimg"></div>
-          <div class="im"><img src="imgs/firstteam_heungminson.png" /></div>
-          <div class="text">
-            <div class="name">
-              Heung-Min<br /><strong> SON</strong>
-              <div class="born"><strong>Born</strong>: 08 July 1992</div>
-            </div>
-            <div class="num">7</div>
-          </div>
-        </div>
-        <div class="tt">
-          <div id="nn"><span>He</span><span>ung-Min Son</span></div>
-          <div id="text">
-            <p>
-              South Korean international superstar Heung-Min Son has endeared
-              himself to the Spurs faithful with some fantastic goalscoring
-              displays since signing from Bayer Leverkusen in August, 2015. The
-              2018/19 campaign saw Sonny hit the 20-goal mark for the second
-              time in three seasons, despite missing game time through two
-              separate spells of international duty with South Korea. He really
-              kick-started his season with a wonderful solo goal in the 3-1 home
-              win over Chelsea in November, 2018, voted the Premier League's EA
-              SPORTS Goal of the Month and, later, our Goal of the Season. He
-              then wrote his name into club history by scoring the first ever
-              first team goal at our new stadium when he opened the scoring in
-              our 2-0 win over Crystal Palace on 3 April, 2019, and, six nights
-              later, bagged the first European goal at our new home in the 1-0
-              Champions League quarter-final, first leg win over Manchester City
-              - one of three goals he scored overall in that epic tie on our
-              journey that eventually led to the showpiece final in Madrid. In
-              January, 2019, he was named Best Footballer in Asia for the fourth
-              time, having previously won the award in 2014, 2015 and 2018, and,
-              the following month, collected the Premier League Player of the
-              Year prize at the London Football Awards. He ended the season with
-              48 appearances to his name in all competitions and, in addition to
-              our Goal of the Season award, swept the board by collecting the
-              One Hotspur Player of the Season, One Hotspur Junior Player of the
-              Season and our Official Supporters’ Clubs’ Player of the Season
-              awards. In December, 2019, he was named AFC Asian International
-              Player of the Year for a record third time and celebrated by
-              scoring a wonderful solo goal from just outside our own penalty
-              box in a 5-0 home win over Burnley in the Premier League. Born in
-              Chuncheon, Son originally moved to Germany as a teenager and came
-              through the ranks at Hamburger SV, scoring on his Bundesliga debut
-              in October, 2010, against 1. FC Köln. A consistent goalscorer
-              throughout his time in Germany, he went on to make 78 appearances
-              and score 20 times for Hamburg before joining Bayer Leverkusen in
-              June, 2013. He helped them to Champions League qualification in
-              each of his two seasons there and made a total of 87 appearances,
-              scoring 29 times at BayArena. After making his debut for us away
-              at Sunderland in September, 2015, he scored twice on his home
-              debut in a 3-1 Europa League victory over Qarabag, before netting
-              the only goal of the game as we beat Palace 1-0 at White Hart Lane
-              in the Premier League three days later. A foot injury sidelined
-              him for a spell and he finished the 2015/16 campaign having scored
-              eight goals in 40 appearances for us, with one of his highlights
-              proving to be his last-gasp winner at Watford in late December,
-              2015. In 2016/17, Son rattled in two cracking strikes in our 4-0
-              win at Stoke City in September, 2016, while also netting both our
-              goals in a 2-1 win at Middlesbrough later that month on his way to
-              picking up the first of two EA SPORTS Player of the Month awards
-              during that campaign. The second came in April, 2017, after he
-              scored five goals in four games at the start of that month. He
-              also completed his first Spurs hat-trick in March, 2017, during
-              our 6-0 FA Cup quarter-final win over Millwall. Playing regularly
-              in the side, Sonny ended the campaign with 21 goals from 47
-              appearances. His winning goal in a 1-0 home victory against
-              Crystal Palace in November, 2017, saw him become the
-              highest-scoring Asian player in Premier League history, taking his
-              overall tally in the division to 20 at the time. He scored some
-              decisive goals during the following few weeks, including a run of
-              four in as many games in December, 2017, picked up the Asian
-              Football Confederation International Player of the Year award for
-              a second time - having first won it in 2015 - and was named Top
-              South Korean Male Footballer of 2017 at the Korea Football
-              Association awards. Featuring in all but one of our 38 Premier
-              League games in 2017/18, he finished that campaign with 18 goals
-              in 53 appearances - more games than any other player in the squad.
-              Sonny is also a regular at international level and scored for
-              South Korea against Algeria at the 2014 FIFA World Cup finals. He
-              also helped his nation qualify for the 2018 tournament, where he
-              scored twice in the finals in Russia. In August and early
-              September, 2018, Sonny captained South Korea to victory at the
-              Asian Games in Indonesia.
-            </p>
-          </div>
-          <div id="n2"><span>La</span><span>test Heung-Min Son news</span></div>
-          <div class="news">
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/march/sonny-im-doing-well-everyones-health-is-most-important/"
-                ><img src="imgs/sonNew1.PNG"
-              /></a>
-            </div>
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/february/stevie-wonder-jose-hugo-sonny-on-bergwijn/"
-                ><img src="imgs/sonNew2.PNG"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <span>All right not reserved by KH</span>
-    </footer>
-    <script src="js/userIcon.js"></script>
-    <script src="js/pageScrl.js"></script>
-  </body>
-</html>
+	<div class="content">
+		<div class="navi">
+			<ul>
+				<li><a href="Tottenham_player1.html">Player</a></li>
+				<li><a href="#">Coaching Staff</a></li>
+				<li><a href="Tottenham_Lt.html">League Table</a></li>
+				<li><a href="Tottenham_Stat.html">Stats</a></li>
+			</ul>
+		</div>
+		<div class="video1">
+			<div class="bgimg"></div>
+			<div class="im"><img src="imgs/firstteam_heungminson.png"></div>
+			<div class="text">
+				<div class="name">Heung-Min<br><strong> SON</strong>
+					<div class="born"><strong>Born</strong>: 08 July 1992</div>
+				</div>
+				<div class="num">7</div>
+			</div>
+		</div>
+		<div class="tt">
+			<div id="nn"><span>He</span><span>ung-Min Son</span></div>
+			<div id="text">
+				<p> South Korean international superstar Heung-Min Son has endeared himself to the Spurs faithful with some fantastic goalscoring displays since signing from Bayer Leverkusen in August, 2015.
+				The 2018/19 campaign saw Sonny hit the 20-goal mark for the second time in three seasons, despite missing game time through two separate spells of international duty with South Korea. He really kick-started his season with a wonderful solo goal in the 3-1 home win over Chelsea in November, 2018, voted the Premier League's EA SPORTS Goal of the Month and, later, our Goal of the Season.
+				He then wrote his name into club history by scoring the first ever first team goal at our new stadium when he opened the scoring in our 2-0 win over Crystal Palace on 3 April, 2019, and, six nights later, bagged the first European goal at our new home in the 1-0 Champions League quarter-final, first leg win over Manchester City - one of three goals he scored overall in that epic tie on our journey that eventually led to the showpiece final in Madrid. In January, 2019, he was named Best Footballer in Asia for the fourth time, having previously won the award in 2014, 2015 and 2018, and, the following month, collected the Premier League Player of the Year prize at the London Football Awards. He ended the season with 48 appearances to his name in all competitions and, in addition to our Goal of the Season award, swept the board by collecting the One Hotspur Player of the Season, One Hotspur Junior Player of the Season and our Official Supporters’ Clubs’ Player of the Season awards.
+				In December, 2019, he was named AFC Asian International Player of the Year for a record third time and celebrated by scoring a wonderful solo goal from just outside our own penalty box in a 5-0 home win over Burnley in the Premier League.
+
+
+				Born in Chuncheon, Son originally moved to Germany as a teenager and came through the ranks at Hamburger SV, scoring on his Bundesliga debut in October, 2010, against 1. FC Köln. A consistent goalscorer throughout his time in Germany, he went on to make 78 appearances and score 20 times for Hamburg before joining Bayer Leverkusen in June, 2013. He helped them to Champions League qualification in each of his two seasons there and made a total of 87 appearances, scoring 29 times at BayArena.
+				After making his debut for us away at Sunderland in September, 2015, he scored twice on his home debut in a 3-1 Europa League victory over Qarabag, before netting the only goal of the game as we beat Palace 1-0 at White Hart Lane in the Premier League three days later. A foot injury sidelined him for a spell and he finished the 2015/16 campaign having scored eight goals in 40 appearances for us, with one of his highlights proving to be his last-gasp winner at Watford in late December, 2015.
+				In 2016/17, Son rattled in two cracking strikes in our 4-0 win at Stoke City in September, 2016, while also netting both our goals in a 2-1 win at Middlesbrough later that month on his way to picking up the first of two EA SPORTS Player of the Month awards during that campaign. The second came in April, 2017, after he scored five goals in four games at the start of that month. He also completed his first Spurs hat-trick in March, 2017, during our 6-0 FA Cup quarter-final win over Millwall. Playing regularly in the side, Sonny ended the campaign with 21 goals from 47 appearances.
+
+
+				His winning goal in a 1-0 home victory against Crystal Palace in November, 2017, saw him become the highest-scoring Asian player in Premier League history, taking his overall tally in the division to 20 at the time. He scored some decisive goals during the following few weeks, including a run of four in as many games in December, 2017, picked up the Asian Football Confederation International Player of the Year award for a second time - having first won it in 2015 - and was named Top South Korean Male Footballer of 2017 at the Korea Football Association awards. Featuring in all but one of our 38 Premier League games in 2017/18, he finished that campaign with 18 goals in 53 appearances - more games than any other player in the squad.
+				Sonny is also a regular at international level and scored for South Korea against Algeria at the 2014 FIFA World Cup finals. He also helped his nation qualify for the 2018 tournament, where he scored twice in the finals in Russia. In August and early September, 2018, Sonny captained South Korea to victory at the Asian Games in Indonesia.</p>
+			</div>
+			<div id="n2"><span>La</span><span>test Heung-Min Son news</span></div>
+			<div class="news">
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/march/sonny-im-doing-well-everyones-health-is-most-important/"><img src="imgs/sonNew1.PNG"></a></div>
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/february/stevie-wonder-jose-hugo-sonny-on-bergwijn/"><img src="imgs/sonNew2.PNG"></a></div>
+			</div>
+			
+		</div>
+	</div>
+        </main>
+	<footer>
+		<span>All right not reserved by KH</span>
+	</footer>
+    
+  <script src="js/userIcon.js"></script>
+  <script src="js/pageScrl.js"></script>
+</body></html>

@@ -1,178 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/8bd2671777.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <title>Insert title here</title>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.3.1.js"
-    ></script>
-    <style>
-      body {
-        width: 1920px;
-      }
 
-      .content {
-        margin: 0 auto;
-        width: 70%;
-        border: 1px solid black;
-        overflow: hidden;
-      }
+<head>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="https://kit.fontawesome.com/8bd2671777.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<style>
+		body {
+            overflow-x: hidden;
+			width: 1920px;
+		}
 
-      .navi {
-        width: 100%;
-        overflow: hidden;
-        background-color: #16274b;
-      }
+		.content {
+			margin: 0 auto;
+			width: 70%;
+			border: 1px solid black;
+			overflow: hidden;
 
-      .navi > ul {
-        margin: 0 auto;
-        margin-left: 65px;
-        width: 100%;
-        list-style: none;
-      }
+		}
 
-      .navi > ul > li > a {
-        border-top: 1px solid #16274b;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 45px;
-        font-weight: 500;
-        color: white;
-        font-size: 25px;
-        float: left;
-        width: 20%;
-        height: 50px;
-        background-color: #16274b;
-        text-decoration: none;
-      }
+		.navi {
+			width: 100%;
+			overflow: hidden;
+			background-color: #16274B;
 
-      .navi li > a:hover {
-        color: #c6f43e;
-        border-top: 1px solid #c6f43e;
-      }
 
-      .video1 {
-        width: 100%;
-        height: 500px;
-        background-image: url(imgs/toby-gif.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 40% 20%;
-        position: relative;
-      }
+		}
 
-      .bgimg {
-        width: 100%;
-        height: 500px;
-        background-color: #16274b;
-        opacity: 0.8;
-        overflow: hidden;
-      }
+		.navi>ul {
+			margin: 0 auto;
+			margin-left: 65px;
+			width: 100%;
+			list-style: none;
 
-      .im > img {
-        width: 400px;
-        top: 52px;
-        left: 140px;
-        position: absolute;
-      }
+		}
 
-      .text {
-        width: 300px;
-        height: 150px;
-        top: 170px;
-        left: 750px;
-        position: absolute;
-      }
+		.navi>ul>li>a {
+			border-top: 1px solid #16274B;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 45px;
+			font-weight: 500;
+			color: white;
+			font-size: 25px;
+			float: left;
+			width: 20%;
+			height: 50px;
+			background-color: #16274B;
+			text-decoration: none;
+		}
 
-      .name {
-        text-align: left;
-        box-sizing: border-box;
-        width: 70%;
-        color: white;
-        height: auto;
-        float: left;
-        font-size: 35px;
-      }
+		.navi li>a:hover {
+			color: #C6F43E;
+			border-top: 1px solid #C6F43E;
 
-      .num {
-        margin-left: 0px;
-        box-sizing: border-box;
-        width: 30%;
-        height: 100px;
-        float: left;
-        color: white;
-        text-align: center;
-        line-height: 80px;
-        font-size: 70px;
-        overflow: hidden;
-      }
+		}
 
-      .born {
-        border-top: 2px solid #4db1e6;
+		.video1 {
 
-        box-sizing: border-box;
-        width: 100%;
-        text-align: left;
-        font-size: 15px;
-        height: 30px;
-        margin-top: 15px;
-      }
-      .tt > #nn {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
-      .tt > #text {
-        margin-top: 0px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
+			width: 100%;
+			height: 500px;
+			background-image: url(imgs/toby-gif.gif);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 40% 20%;
+			position: relative;
 
-        padding: 10px;
 
-        white-space: pre-line;
-      }
+		}
 
-      #n2 {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 150px;
-        font-size: 50px;
-      }
+		.bgimg {
+			width: 100%;
+			height: 500px;
+			background-color: #16274B;
+			opacity: 0.8;
+			overflow: hidden;
 
-      .news {
-        margin-top: 20px;
-        margin-left: 300px;
-        margin-right: 150px;
-        margin-bottom: 450px;
-      }
-      .nImg {
-        float: left;
-      }
-    </style>
-    <script>
-      $(function () {
-        $("#nn").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#nn").children().last().css("font-size", "40px");
-        $("#nn").children().last().css("color", "#383639");
+		}
 
-        $("#n2").children().first().css("border-bottom", "4px solid #C6F43E");
-        $("#n2").children().last().css("font-size", "40px");
-        $("#n2").children().last().css("color", "#383639");
-      });
-    </script>
-  </head>
+		.im>img {
+			width: 400px;
+			top: 52px;
+			left: 140px;
+			position: absolute;
 
-  <body>
+		}
+
+		.text {
+
+			
+			width: 300px;
+			height: 150px;
+			top: 170px;
+			left: 750px;
+			position: absolute;
+
+
+		}
+
+		.name {
+			
+			text-align: left;
+			box-sizing: border-box;
+			width: 70%;
+			color: white;
+			height: auto;
+			float: left;
+			font-size: 35px;
+
+		}
+
+		.num {
+			margin-left: 0px;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100px;
+			float: left;
+			color: white;
+			text-align: center;
+			line-height: 80px;
+			font-size: 70px;
+			overflow: hidden;
+		}
+
+		.born {
+			border-top: 2px solid #4DB1E6;
+
+			box-sizing: border-box;
+			width: 100%;
+			text-align: left;
+			font-size: 15px;
+			height: 30px;
+			margin-top: 15px;
+		}
+		.tt>#nn{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		.tt>#text{
+			margin-top: 0px;
+			margin-left: 150px;
+			margin-right: 150px;
+			margin-bottom: 50px;
+			
+			padding: 10px;
+			
+			white-space: pre-line;
+			
+		}
+		
+		#n2{
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 70px;
+			margin-left: 150px;
+			font-size: 50px;
+			
+		}
+		
+		.news{
+			margin-top: 20px;
+			margin-left: 300px;
+			margin-right: 150px;
+			margin-bottom: 450px;
+		}
+		.nImg{
+			
+			float: left;
+			
+		}
+	</style>
+	<script>
+		$(function(){
+			$("#nn").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#nn").children().last().css("font-size","40px");
+			$("#nn").children().last().css("color","#383639");
+			
+			$("#n2").children().first().css("border-bottom","4px solid #C6F43E");
+			$("#n2").children().last().css("font-size","40px");
+			$("#n2").children().last().css("color","#383639");
+			
+		});
+	</script>
+
+</head>
+
+<body>
     <header>
       <div class="menu">
         <a href="index.html">
@@ -203,104 +222,54 @@
       </div>
     </header>
     <main>
-      <div class="content">
-        <div class="navi">
-          <ul>
-            <li><a href="Tottenham_player1.html">Player</a></li>
-            <li><a href="#">Coaching Staff</a></li>
-            <li><a href="Tottenham_Lt.html">League Table</a></li>
-            <li><a href="Tottenham_Stat.html">Stats</a></li>
-          </ul>
-        </div>
-        <div class="video1">
-          <div class="bgimg"></div>
-          <div class="im">
-            <img src="imgs/firstteam_tobyalderweireld.png" />
-          </div>
-          <div class="text">
-            <div class="name">
-              Toby<br /><strong>ALDERWEIRELD</strong>
-              <div class="born"><strong>Born</strong>: 02 March 1989</div>
-            </div>
-            <div class="num">4</div>
-          </div>
-        </div>
-        <div class="tt">
-          <div id="nn"><span>To</span><span>by Alderweireld</span></div>
-          <div id="text">
-            <p>
-              Central defender Toby Alderweireld has been a tremendous presence
-              at the back for us since his arrival from Atletico Madrid in July,
-              2015. He started 12 of our 13 games en route to the Champions
-              League Final in Madrid in 2018/19 - more than any other player in
-              the squad - and made the joint-highest number of Premier League
-              starts for us throughout that campaign, 33, along with Hugo
-              Lloris. One substitute appearance in the 3-1 home win over
-              Leicester City at Wembley in February, 2019, took his league
-              appearance tally for that season to 34, with four starts in the
-              Carabao Cup making it 50 appearances in all competitions. A
-              Belgium international, he came through the ranks at Ajax, making
-              186 appearances and scoring 15 goals during nine years with the
-              Eredivisie champions, where he lifted three league titles and one
-              Dutch Cup. He was named Ajax Talent of the Year in 2010, an honour
-              also won by Jan Vertonghen and Christian Eriksen during their
-              times in Amsterdam. Toby joined Spanish side Atletico in 2013 and
-              was part of the squad that won the La Liga title on the last day
-              of the season as well as reaching the Champions League final in
-              the same year. He made 22 appearances in all for Diego Simeone's
-              side, scoring twice, before impressing on loan at Southampton
-              during the 2014/15 season. He played 28 times for the St Mary’s
-              club in all competitions, scoring once. Following his arrival here
-              at Spurs, he earned the One Hotspur Members’ Player of the Season
-              and Supporters’ Clubs’ Player of the Season awards - as well as a
-              place in the PFA Premier League Team of the Year - after a fine
-              first campaign in our colours in 2015/16. He played every minute
-              of every game for us in the Europa League and Premier League,
-              barring a couple of minutes at the end of our 2-2 draw with
-              Chelsea in May, 2016, as he was forced off in stoppage time. He
-              also weighed in with four goals - all at home in the Premier
-              League - against Manchester City, West Ham, Arsenal and Manchester
-              United. He suffered a knee injury in October, 2016, which kept him
-              out until early December, but he was quickly back to his best and
-              ended up playing 39 times over the course of the 2016/17 campaign,
-              scoring on the last day of the season in our 7-1 victory at
-              already-relegated Hull City. He played 21 times in all
-              competitions during 2017/18, with a hamstring injury sustained in
-              our Champions League clash with Real Madrid at Wembley in
-              November, 2017, causing him to miss a number of weeks of action.
-              Capped by Belgium at every level from Under-15 to Under-21, Toby
-              made his senior international debut in 2009 and appeared at the
-              2014 FIFA World Cup finals in Brazil. He also featured for his
-              nation at Euro 2016, scoring the opening goal in Belgium's 4-0 win
-              over Hungary in the round of 16, and was heavily involved in
-              Belgium's best-ever World Cup finish as they came third at the
-              2018 tournament in Russia.
-            </p>
-          </div>
-          <div id="n2">
-            <span>La</span><span>test Toby Alderweired news</span>
-          </div>
-          <div class="news">
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/march/toby-well-take-second-half-spirit-to-leipzig/"
-                ><img src="imgs/tobynew1.PNG"
-              /></a>
-            </div>
-            <div class="nImg">
-              <a
-                href="https://www.tottenhamhotspur.com/news/2020/february/stevie-wonder-jose-hugo-sonny-on-bergwijn/"
-                ><img src="imgs/tobynew2.PNG"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <span>All right not reserved by KH</span>
-    </footer>
-    <script src="js/userIcon.js"></script>
-    <script src="js/pageScrl.js"></script>
-  </body>
-</html>
+	<div class="content">
+		<div class="navi">
+			<ul>
+				<li><a href="Tottenham_player1.html">Player</a></li>
+				<li><a href="#">Coaching Staff</a></li>
+				<li><a href="Tottenham_Lt.html">League Table</a></li>
+				<li><a href="Tottenham_Stat.html">Stats</a></li>
+			</ul>
+		</div>
+		<div class="video1">
+			<div class="bgimg"></div>
+			<div class="im"><img src="imgs/firstteam_tobyalderweireld.png"></div>
+			<div class="text">
+				<div class="name">Toby<br><strong>ALDERWEIRELD</strong>
+					<div class="born"><strong>Born</strong>: 02 March 1989</div>
+				</div>
+				<div class="num">4</div>
+			</div>
+		</div>
+		<div class="tt">
+			<div id="nn"><span>To</span><span>by Alderweireld</span></div>
+			<div id="text">
+				<p> Central defender Toby Alderweireld has been a tremendous presence at the back for us since his arrival from Atletico Madrid in July, 2015.
+				He started 12 of our 13 games en route to the Champions League Final in Madrid in 2018/19 - more than any other player in the squad - and made the joint-highest number of Premier League starts for us throughout that campaign, 33, along with Hugo Lloris. One substitute appearance in the 3-1 home win over Leicester City at Wembley in February, 2019, took his league appearance tally for that season to 34, with four starts in the Carabao Cup making it 50 appearances in all competitions.
+				A Belgium international, he came through the ranks at Ajax, making 186 appearances and scoring 15 goals during nine years with the Eredivisie champions, where he lifted three league titles and one Dutch Cup. He was named Ajax Talent of the Year in 2010, an honour also won by Jan Vertonghen and Christian Eriksen during their times in Amsterdam.
+
+
+				Toby joined Spanish side Atletico in 2013 and was part of the squad that won the La Liga title on the last day of the season as well as reaching the Champions League final in the same year. He made 22 appearances in all for Diego Simeone's side, scoring twice, before impressing on loan at Southampton during the 2014/15 season. He played 28 times for the St Mary’s club in all competitions, scoring once.
+				Following his arrival here at Spurs, he earned the One Hotspur Members’ Player of the Season and Supporters’ Clubs’ Player of the Season awards - as well as a place in the PFA Premier League Team of the Year - after a fine first campaign in our colours in 2015/16. He played every minute of every game for us in the Europa League and Premier League, barring a couple of minutes at the end of our 2-2 draw with Chelsea in May, 2016, as he was forced off in stoppage time. He also weighed in with four goals - all at home in the Premier League - against Manchester City, West Ham, Arsenal and Manchester United.
+				He suffered a knee injury in October, 2016, which kept him out until early December, but he was quickly back to his best and ended up playing 39 times over the course of the 2016/17 campaign, scoring on the last day of the season in our 7-1 victory at already-relegated Hull City.
+
+
+				He played 21 times in all competitions during 2017/18, with a hamstring injury sustained in our Champions League clash with Real Madrid at Wembley in November, 2017, causing him to miss a number of weeks of action.
+				Capped by Belgium at every level from Under-15 to Under-21, Toby made his senior international debut in 2009 and appeared at the 2014 FIFA World Cup finals in Brazil. He also featured for his nation at Euro 2016, scoring the opening goal in Belgium's 4-0 win over Hungary in the round of 16, and was heavily involved in Belgium's best-ever World Cup finish as they came third at the 2018 tournament in Russia.</p>
+			</div>
+			<div id="n2"><span>La</span><span>test Toby Alderweired news</span></div>
+			<div class="news">
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/march/toby-well-take-second-half-spirit-to-leipzig/"><img src="imgs/tobynew1.PNG"></a></div>
+				<div class="nImg"><a href="https://www.tottenhamhotspur.com/news/2020/february/stevie-wonder-jose-hugo-sonny-on-bergwijn/"><img src="imgs/tobynew2.PNG"></a></div>
+			</div>
+			
+		</div>
+	</div>
+        </main>
+	<footer>
+		<span>All right not reserved by KH</span>
+	</footer>
+    
+  <script src="js/userIcon.js"></script>
+  <script src="js/pageScrl.js"></script>
+</body></html>
