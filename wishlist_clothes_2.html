@@ -8,7 +8,7 @@
       src="https://code.jquery.com/jquery-3.3.1.js"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="format/color.css" rel="stylesheet" type="text/css" />
+
     <script
       src="https://kit.fontawesome.com/8bd2671777.js"
       crossorigin="anonymous"
@@ -97,6 +97,28 @@
                 .find("span")
                 .eq(3)
                 .html(count * 65700);
+              var total = $(".order").find("span").eq(3).html();
+              var arr1 = new Array();
+              for (var i = 0; i < total.length; i++) {
+                arr1.push(total.charAt(i));
+              }
+              arr1.reverse();
+              arr1.splice(3, 0, ",");
+              if (arr1.length > 7) {
+                arr1.splice(7, 0, ",");
+              }
+              if (arr1.length > 11) {
+                arr1.splice(11, 0, ",");
+              }
+              arr1.reverse().toString();
+              $("button")
+                .parent("td")
+                .siblings()
+                .last()
+                .children()
+                .last()
+                .html(arr1);
+              $(".order").find("span").eq(3).html(arr1);
             }
           });
 
@@ -118,11 +140,32 @@
               .find("span")
               .eq(3)
               .html(count * 65700);
-            var total = $("#price").html(count * 65700);
+            var total = $(".order").find("span").eq(3).html();
+            var arr1 = new Array();
+            for (var i = 0; i < total.length; i++) {
+              arr1.push(total.charAt(i));
+            }
+            arr1.reverse();
+            arr1.splice(3, 0, ",");
+            if (arr1.length > 7) {
+              arr1.splice(7, 0, ",");
+            }
+            if (arr1.length > 11) {
+              arr1.splice(11, 0, ",");
+            }
+            arr1.reverse().toString();
+            $("button")
+              .parent("td")
+              .siblings()
+              .last()
+              .children()
+              .last()
+              .html(arr1);
+            $(".order").find("span").eq(3).html(arr1);
           });
 
         $("a")
-          .first()
+          .eq(11)
           .click(function () {
             alert("!주의! 장바구니가 모두 비워집니다.");
           });
@@ -139,11 +182,13 @@
             <div><span>Tottenham</span><span>HotSpur</span></div>
           </div>
         </a>
-        <span><a href="teams.html">TEAMS</a></span>
-        <span><a href="Tottenham_player1.html">OUR PLAYERS</a></span>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
+        <span><a href="teams.html">CLUB</a></span>
         <span><a href="ticket.html">TICKETS</a></span>
         <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
-        <span><a href="#">VOTE</a></span>
+        <span><a href="dk_tottenham3.html">VOTE</a></span>
+        <span><a href="dk_tottenham1.html">LIVE</a></span>
+        <span><a href="news.html">NEWS</a></span>
         <span><a href="goods_main_clothes.html">SHOP</a></span>
         <div class="icon-scroll">
           <div class="i_scroll_before"></div>
@@ -173,14 +218,14 @@
             <td width="250px">박차 1986 훔멜 어웨이 셔츠</td>
             <td><button>-</button><span> 1 </span><button>+</button><br /></td>
             <td>\65,700</td>
-            <td><span>\</span><span>65700</span></td>
+            <td><span>\</span><span>65,700</span></td>
           </tr>
         </table>
         <div class="order">
           주문 상세
           <hr />
           <h3><span>\65,700 X </span><span>1</span></h3>
-          <h3><span>합계 : \</span><span>65700</span></h3>
+          <h3><span>합계 : \</span><span>65,700</span></h3>
           <br />
           <div class="total">
             <i class="fas fa-shopping-basket"></i>
