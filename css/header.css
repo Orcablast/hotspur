@@ -9,7 +9,7 @@ header {
   display: flex;
   height: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .menu > span > a {
@@ -69,6 +69,7 @@ a .logo_wrapper div {
 
 .dh-user {
   position: relative;
+  margin-right: 60px;
 }
 
 .dh-user i {
