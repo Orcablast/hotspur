@@ -6,7 +6,9 @@ $(function () {
   enable();
 
   function userMenu() {
-    $(".dh-myinfo").fadeToggle();
+    $(".dh-myinfo").fadeToggle(function () {
+      $(this).clearQueue();
+    });
   }
 
   function disable() {
