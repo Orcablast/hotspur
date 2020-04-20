@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <style>
+      body {
+        width: 1920px;
+      }
+
+      .content {
+        margin: 0 auto;
+        width: 70%;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+
+      .navi {
+        width: 100%;
+        overflow: hidden;
+        background-color: #16274b;
+      }
+
+      .navi > ul {
+        margin: 0 auto;
+        margin-left: 65px;
+        width: 100%;
+        list-style: none;
+      }
+
+      .navi > ul > li > a {
+        border-top: 1px solid #16274b;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 45px;
+        font-weight: 500;
+        color: white;
+        font-size: 25px;
+        float: left;
+        width: 20%;
+        height: 50px;
+        background-color: #16274b;
+        text-decoration: none;
+      }
+
+      .navi li > a:hover {
+        color: #c6f43e;
+        border-top: 1px solid #c6f43e;
+      }
+
+      .video1 {
+        width: 100%;
+        height: 500px;
+        background-image: url(imgs/dele-gif.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40% 20%;
+        position: relative;
+      }
+
+      .bgimg {
+        width: 100%;
+        height: 500px;
+        background-color: #16274b;
+        opacity: 0.8;
+        overflow: hidden;
+      }
+
+      .im > img {
+        width: 400px;
+        top: 52px;
+        left: 140px;
+        position: absolute;
+      }
+
+      .text {
+        width: 300px;
+        height: 150px;
+        top: 170px;
+        left: 750px;
+        position: absolute;
+      }
+
+      .name {
+        text-align: left;
+        box-sizing: border-box;
+        width: 70%;
+        color: white;
+        height: auto;
+        float: left;
+        font-size: 35px;
+      }
+
+      .num {
+        margin-left: -70px;
+        box-sizing: border-box;
+        width: 30%;
+        height: 100px;
+        float: left;
+        color: white;
+        text-align: center;
+        line-height: 80px;
+        font-size: 70px;
+        overflow: hidden;
+      }
+
+      .born {
+        border-top: 2px solid #4db1e6;
+
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        height: 30px;
+        margin-top: 15px;
+      }
+      .tt > #nn {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-left: 150px;
+        font-size: 50px;
+      }
+      .tt > #text {
+        margin-top: 0px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 50px;
+
+        padding: 10px;
+
+        white-space: pre-line;
+      }
+
+      #n2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-left: 150px;
+        font-size: 50px;
+      }
+
+      .news {
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-right: 150px;
+        margin-bottom: 450px;
+      }
+      .nImg {
+        float: left;
+      }
+    </style>
+    <script>
+      $(function () {
+        $("#nn").children().first().css("border-bottom", "4px solid #C6F43E");
+        $("#nn").children().last().css("font-size", "40px");
+        $("#nn").children().last().css("color", "#383639");
+
+        $("#n2").children().first().css("border-bottom", "4px solid #C6F43E");
+        $("#n2").children().last().css("font-size", "40px");
+        $("#n2").children().last().css("color", "#383639");
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html">
+          <div class="logo_wrapper">
+            <div class="menu_logo"></div>
+            <div><span>Tottenham</span><span>HotSpur</span></div>
+          </div>
+        </a>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
+        <span><a href="teams.html">CLUB</a></span>
+        <span><a href="ticket.html">TICKETS</a></span>
+        <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
+        <span><a href="dk_tottenham3.html">VOTE</a></span>
+        <span><a href="dk_tottenham1.html">LIVE</a></span>
+        <span><a href="news.html">NEWS</a></span>
+        <span><a href="goods_main_clothes.html">SHOP</a></span>
+        <div class="icon-scroll">
+          <div class="i_scroll_before"></div>
+          <div class="i_scroll_after"></div>
+        </div>
+        <span class="dh-user"
+          ><i class="far fa-user"></i>
+          <div class="dh-myinfo">
+            <a href="Tottenham_insertMem.html">회원가입</a>
+            <a href="login.html">로그인</a>
+          </div>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="navi">
+          <ul>
+            <li><a href="Tottenham_player1.html">Player</a></li>
+            <li><a href="#">Coaching Staff</a></li>
+            <li><a href="Tottenham_Lt.html">League Table</a></li>
+            <li><a href="Tottenham_Stat.html">Stats</a></li>
+          </ul>
+        </div>
+        <div class="video1">
+          <div class="bgimg"></div>
+          <div class="im"><img src="imgs/firstteam_delealli.png" /></div>
+          <div class="text">
+            <div class="name">
+              Dele<br /><strong>ALLI</strong>
+              <div class="born"><strong>Born</strong>: 11 April 1996</div>
+            </div>
+            <div class="num">20</div>
+          </div>
+        </div>
+        <div class="tt">
+          <div id="nn"><span>De</span><span>le Alli</span></div>
+          <div id="text">
+            <p>
+              Talented young midfielder Dele Alli has been a shining light since
+              emerging onto the senior stage - and continues to improve. An
+              established regular for club and country, the England
+              international scored in our 2-1 win at Newcastle on the opening
+              day of 2018/19 and went on to clock up five goals in 25 Premier
+              League appearances throughout that season. He also scored twice in
+              our run to the Carabao Cup semi-finals and made 38 appearances in
+              all competitions, including eight starts in our run to the
+              Champions League Final against Liverpool in Madrid in June, 2019.
+              The highly-rated starlet initially joined us from MK Dons in
+              February, 2015, before returning there to complete the 2014/15
+              League One campaign. There, he enjoyed an outstanding season with
+              16 goals in 39 appearances in the third tier of English football
+              as MK were promoted automatically into the Championship as
+              runners-up behind Bristol City. His performances were recognised
+              with a place in the PFA's League One Team of the Season and he was
+              voted the Football League's Young Player of the Season. Dele made
+              his Spurs debut off the bench at Manchester United on the opening
+              day of the 2015/16 season and headed home his first goal for us a
+              fortnight later in a 1-1 draw at Leicester City. Having played in
+              a deeper midfield role, he sparkled in attack as the season
+              progressed and scored Match of the Day's Goal of the Season and
+              our Supporters' Clubs' Goal of the Season with a tremendous flick,
+              turn and volley in a 3-1 victory at Crystal Palace in January,
+              2016. He finished that campaign with a total of 10 Premier League
+              goals and 46 appearances in all competitions to his name and was
+              named PFA Young Player of the Year and earned a spot in the PFA
+              Premier League Team of the Year. Dele subsequently enjoyed an even
+              better 2016/17 campaign which saw him break the 20-goal barrier
+              with 22 in total, start all six of our Champions League games, win
+              his first EA SPORTS Player of the Month award in January, 2017,
+              pick up a second consecutive PFA Young Player of the Year award,
+              earn a place in the PFA Team of the Year for the second time and
+              be named One Hotspur Junior Members' Player of the Season - again
+              for the second successive season. Plus, he won our Supporters'
+              Clubs' Goal of the Season prize for the second year in a row, this
+              time for his cracker against Watford at White Hart Lane in April,
+              2017. In all, he played 50 times for us during that season and
+              memorably scored three consecutive braces against Southampton,
+              Watford and Chelsea around the turn of the year - the latter
+              coming in the form of two near-identical headers as we vanquished
+              the league leaders at White Hart Lane. Dele scored 14 goals in 50
+              appearances for us across all competitions in 2017/18, including a
+              wonderful strike in our 3-1 victory at Chelsea on 1 April, where
+              he pulled down a long ball with one deft touch and then slammed
+              past Willy Caballero with his second to help us register our first
+              win at Stamford Bridge since 1990. That was the first of two goals
+              he scored in that game while he also memoraby scored a brace in
+              our 3-1 home Champions League victory over eventual competition
+              winners Real Madrid. In October, 2015, Dele made his senior
+              England debut against Estonia in a Euro 2016 qualifier and the
+              following month he rifled home a stunning long-range goal to open
+              his Three Lions account in a friendly match against France at
+              Wembley - beating Spurs team-mate Hugo Lloris between the sticks
+              for Les Bleus. He subsequently appeared in all four of England's
+              matches at Euro 2016 and was part of the Three Lions' squad that
+              reached the semi-finals of the 2018 FIFA World Cup in Russia,
+              scoring in a 2-0 quarter-final win over Sweden. Previously he had
+              been capped by England at Under-17, Under-18, Under- 19 and
+              Under-21 levels..
+            </p>
+          </div>
+          <div id="n2"><span>La</span><span>test Dele Alli news</span></div>
+          <div class="news">
+            <div class="nImg">
+              <a
+                href="https://www.tottenhamhotspur.com/news/2020/april/deles-top-10-goals/"
+                ><img src="imgs/delenew1.PNG"
+              /></a>
+            </div>
+            <div class="nImg">
+              <a
+                href="https://www.tottenhamhotspur.com/news/2020/february/spurs-tv-special-hugos-best-saves-in-the-premier-league/"
+                ><img src="imgs/llorisnews2.PNG"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+  </body>
+  <script src="js/userIcon.js"></script>
+  <script src="js/pageScrl.js"></script>
+</html>

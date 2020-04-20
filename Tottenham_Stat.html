@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8bd2671777.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <style>
+      body {
+        width: 1920px;
+      }
+
+      .content {
+        margin: 0 auto;
+        width: 70%;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+
+      .navi {
+        width: 100%;
+        overflow: hidden;
+        background-color: #16274b;
+      }
+
+      .navi > ul {
+        margin: 0 auto;
+        margin-left: 65px;
+
+        width: 100%;
+        list-style: none;
+      }
+
+      .navi > ul > li > a {
+        border-top: 1px solid #16274b;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 45px;
+        font-weight: 500;
+        color: white;
+        font-size: 25px;
+        float: left;
+        width: 20%;
+        height: 50px;
+
+        background-color: #16274b;
+        text-decoration: none;
+      }
+
+      .navi li > a:hover {
+        color: #c6f43e;
+        border-top: 1px solid #c6f43e;
+      }
+      .Lt {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 80px;
+      }
+      .Lt > img {
+        margin-top: 50px;
+        margin-bottom: 150px;
+      }
+      #nn {
+        font-size: 30px;
+        margin-left: 10px;
+      }
+      #n2 {
+        font-size: 30px;
+        margin-left: 10px;
+      }
+    </style>
+    <script>
+      $(function () {
+        $("#nn").children().first().css("border-bottom", "4px solid #C6F43E");
+        $("#nn").children().last().css("font-size", "25px");
+        $("#nn").children().last().css("color", "#383639");
+
+        $("#n2").children().first().css("border-bottom", "4px solid #C6F43E");
+        $("#n2").children().last().css("font-size", "25px");
+        $("#n2").children().last().css("color", "#383639");
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html">
+          <div class="logo_wrapper">
+            <div class="menu_logo"></div>
+            <div><span>Tottenham</span><span>HotSpur</span></div>
+          </div>
+        </a>
+        <span><a href="Tottenham_player1.html">TEAMS</a></span>
+        <span><a href="teams.html">CLUB</a></span>
+        <span><a href="ticket.html">TICKETS</a></span>
+        <span><a href="highlight_main.html">HIGHLIGHTS</a></span>
+        <span><a href="dk_tottenham3.html">VOTE</a></span>
+        <span><a href="dk_tottenham1.html">LIVE</a></span>
+        <span><a href="news.html">NEWS</a></span>
+        <span><a href="goods_main_clothes.html">SHOP</a></span>
+        <div class="icon-scroll">
+          <div class="i_scroll_before"></div>
+          <div class="i_scroll_after"></div>
+        </div>
+        <span class="dh-user"
+          ><i class="far fa-user"></i>
+          <div class="dh-myinfo">
+            <a href="Tottenham_insertMem.html">회원가입</a>
+            <a href="login.html">로그인</a>
+          </div>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="navi">
+          <ul>
+            <li><a href="Tottenham_player1.html">Player</a></li>
+            <li><a href="#">Coaching Staff</a></li>
+            <li><a href="Tottenham_Lt.html">League Table</a></li>
+            <li><a href="Tottenham_Stat.html">Stats</a></li>
+          </ul>
+        </div>
+        <div class="Lt">
+          <div id="nn"><span>Pre</span><span>mier League</span></div>
+          <img src="imgs/league.png" />
+        </div>
+        <div class="Lt">
+          <div id="n2"><span>UE</span><span>FA Champions League</span></div>
+          <img src="imgs/Cham.png" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>All right not reserved by KH</span>
+    </footer>
+    <script src="js/userIcon.js"></script>
+  </body>
+</html>
